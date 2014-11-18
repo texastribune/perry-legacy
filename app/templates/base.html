@@ -17,19 +17,15 @@
 </head>
 <body>
 
-<header class="masthead">
+<div class="masthead">
+  <div class="header">
+    <a href="#menu">Demo</a>
+  </div>
   <div class="container">
     <div class="branding">
-      <a href="//www.texastribune.org/"><img class="trib-logo" alt="The Texas Tribune" src="/images/tt-logo-white.png"></a>
+      <a href="//www.texastribune.org/"><img class="trib-logo" alt="The Texas Tribune" src="//s3.amazonaws.com/apps.texastribune.org/branding/TxTrib-logo-white500x55.png"></a>
     </div>
   </div>
-</header>
-
-<div class="banner">
-  <div class="grand-header-image"></div>
-  <header class="grand-header content-block">
-    <h1><a href="/">{{ META.project_title }}</a></h1>
-  </header>
 </div>
 
 {% block content %}{% endblock %}
@@ -70,10 +66,29 @@
     </div>
   </div>
 </footer>
-
+<nav id="menu">
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#about">About us</a>
+      <ul>
+        <li><a href="#about/history">History</a></li>
+        <li><a href="#about/team">The team</a>
+          <ul>
+            <li><a href="#about/team/management">Management</a></li>
+            <li><a href="#about/team/sales">Sales</a></li>
+            <li><a href="#about/team/development">Development</a></li>
+          </ul>
+        </li>
+        <li><a href="#about/address">Our address</a></li>
+      </ul>
+    </li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
 
 <!-- build:js scripts/vendor.js -->
 <!-- bower:js -->
+<script src="../../bower_components/jquery/dist/jquery.js"></script>
 <!-- endbower -->
 <!-- endbuild -->
 
@@ -85,10 +100,34 @@
   s.parentNode.insertBefore(i,s)}(window,document,'script','ga'));
   ga('create','UA-9827490-7');ga('send','pageview');
 </script>
+<script src="scripts/mmenu/jquery.mmenu.min.js"></script>
+<script type="text/javascript">
+  $(function() {
+    $("nav#menu").mmenu({
+       "offCanvas": {
+          "zposition": "front"
+       }
+    });
+  });
+
+  $(function() {
+    $("#menu").mmenu({
+      offCanvas : {
+        position  : "top",
+        zposition : "front"
+      }
+    }).on("click", "a[href=\"#\"]",
+        function() {
+          alert("Thank you for clicking, but that's a demo link.");
+          return false;
+        }
+      );
+    });
+</script>
 
 <!-- build:js({app,.tmp}) scripts/main.js -->
 <script src="scripts/main.js"></script>
-<!-- endbuild -->
+ --><!-- endbuild
 
 </body>
 </html>
