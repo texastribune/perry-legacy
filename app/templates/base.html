@@ -14,18 +14,23 @@
   <!-- build:css(.tmp) styles/main.css -->
   <link rel="stylesheet" href="styles/main.css">
   <!-- endbuild -->
+
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 </head>
 <body>
 
 <div class="masthead">
   <div class="header">
-    <a href="#menu">Demo</a>
+    <a href="#menu"><i class="fa fa-bars"></i></a>
+    <p class="mmenu">Jump Around</p>
   </div>
+
   <div class="container">
     <div class="branding">
       <a href="//www.texastribune.org/"><img class="trib-logo" alt="The Texas Tribune" src="//s3.amazonaws.com/apps.texastribune.org/branding/TxTrib-logo-white500x55.png"></a>
     </div>
   </div>
+
 </div>
 
 {% block content %}{% endblock %}
@@ -116,12 +121,6 @@
         position  : "top",
         zposition : "front"
       }
-    }).on("click", "a[href=\"#\"]",
-        function() {
-          alert("Thank you for clicking, but that's a demo link.");
-          return false;
-        }
-      );
     });
 </script>
 
