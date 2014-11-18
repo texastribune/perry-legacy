@@ -10,9 +10,9 @@ $(document).ready(function() {
 
 // Reset heights/positions on window resize
 $(window).resize(function() {
-  setHeight('.landing-banner', window);
+  setHeight('.banner', window);
 });
 
 $(window).on( "orientationchange", function() {
-  setHeight('.landing-banner', window);
+  setHeight('.banner', window);
 });

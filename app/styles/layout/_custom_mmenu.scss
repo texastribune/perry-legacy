@@ -1,16 +1,33 @@
-.masthead {
+#my-header {
   position: fixed;
+  top: 0;
   z-index: 1;
 }
 
-.fa-bars {
-  font-size: 2em;
-  float: left;
-  margin: .25em 0 .25em .5em;
-}
+  .masthead {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+  }
 
-p.mmenu {
-  color: $white;
-  float: left;
-  margin: 1em;
-}
+  .fa.fa-bars {
+    font-size: 2em;
+    float: left;
+    margin: .25em 0 .25em .5em;
+  }
+
+  p.mmenu {
+    color: $white;
+    float: left;
+    margin: 1em;
+  }
+
+
+  li.mmenu {
+    .fa {
+      font-size: 1.5em;
+      margin-right: 1em;
+      width: 1em;
+    }
+  }
+

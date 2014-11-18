@@ -9,6 +9,10 @@ $sub-nav-bp: new-breakpoint(min-width 500px);
       @include omega();
     }
 
+  li {
+    margin-bottom: 1em;
+  }
+
   .fa {
     font-size: 1.5em;
     margin-right: 1em;

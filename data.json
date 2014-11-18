@@ -8,69 +8,80 @@
     "topic": "Overview",
     "headline": "The Lasting Impact of Gov. Rick Perry",
     "byline": "Jay Root",
-    "reporter_bio": "http://www.texastribune.org/about/staff/jay-root"
+    "reporter_bio": "http://www.texastribune.org/about/staff/jay-root",
+    "icon": "fa-star",
+    "slug": "index"
   },
   "HEALTH": {
     "topic": "Health Care",
     "headline": "Gov. Rick Perry's Impact on Texas Health Care",
     "byline": "Alexa Ura",
     "reporter_bio": "http://www.texastribune.org/about/staff/",
-    "icon": "fa-plus-square"
+    "icon": "fa-plus-square",
+    "slug": "health-care"
   },
   "PUBLIC_EDU": {
     "topic": "Public Education",
     "headline": "",
     "byline": "",
     "reporter_bio": "",
-    "icon": "fa-book"
+    "icon": "fa-book",
+    "slug": "public-education"
   },
   "HIGHER_EDU": {
     "topic": "Higher Education",
     "headline": "",
     "byline": "",
     "reporter_bio": "",
-    "icon": "fa-graduation-cap"
+    "icon": "fa-graduation-cap",
+    "slug": "higher-education"
   },
   "TRANSPO": {
     "topic": "Transportation",
     "headline": "",
     "byline": "",
     "reporter_bio": "",
-    "icon": "fa-car"
+    "icon": "fa-car",
+    "slug": "transportation"
   },
   "IMMIGRATION": {
     "topic": "Immigration",
     "headline": "",
     "byline": "",
     "reporter_bio": "",
-    "icon": "fa-group"
+    "icon": "fa-group",
+    "slug": "immigration"
   },
   "ENERGY": {
     "topic": "Energy",
     "headline": "",
     "byline": "",
     "reporter_bio": "",
-    "icon": "fa-tint"
+    "icon": "fa-tint",
+    "slug": "energy"
   },
   "ENVIRO": {
     "topic": "Environment",
     "headline": "",
     "byline": "",
     "reporter_bio": "",
-    "icon": "fa-tree"
+    "icon": "fa-tree",
+    "slug": "environment"
   },
   "TEF": {
     "topic": "Texas Enterprise Fund",
     "headline": "",
     "byline": "",
     "reporter_bio": "",
-    "icon": "fa-money"
+    "icon": "fa-money",
+    "slug": "texas-enterprise-fund"
   },
   "JUSTICE": {
     "topic": "Criminal Justice",
     "headline": "",
     "byline": "",
     "reporter_bio": "",
-    "icon": "fa-legal"
+    "icon": "fa-legal",
+    "slug": "criminal-justice"
   }
 }
