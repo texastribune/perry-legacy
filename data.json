@@ -1,11 +1,17 @@
 {
   "META": {
     "project_title": "The Legacy of Gov. Rick Perry",
-    "project_subtitle": "After 14 years in the governor's office, Rick Perry has left a lasting mark on Texas",
+    "project_subtitle": "After 14 years in the governor's office, Rick Perry has left a lasting mark on Texas. ",
     "byline": ""
   },
+  "OVERVIEW": {
+    "headline": "The Lasting Impact of Gov. Rick Perry",
+    "byline": "Jay Root",
+    "reporter_bio": "http://www.texastribune.org/about/staff/jay-root"
+  },
   "HEALTH": {
-    "topic": "Health Care",
-    "byline": "Alexa Ura"
+    "headline": "Gov. Rick Perry's Impact on Texas Health Care",
+    "byline": "Alexa Ura",
+    "reporter_email": "aura@texastribune.org"
   }
 }
