@@ -5,13 +5,72 @@
     "byline": ""
   },
   "OVERVIEW": {
+    "topic": "Overview",
     "headline": "The Lasting Impact of Gov. Rick Perry",
     "byline": "Jay Root",
     "reporter_bio": "http://www.texastribune.org/about/staff/jay-root"
   },
   "HEALTH": {
+    "topic": "Health Care",
     "headline": "Gov. Rick Perry's Impact on Texas Health Care",
     "byline": "Alexa Ura",
-    "reporter_email": "aura@texastribune.org"
+    "reporter_bio": "http://www.texastribune.org/about/staff/",
+    "icon": "fa-plus-square"
+  },
+  "PUBLIC_EDU": {
+    "topic": "Public Education",
+    "headline": "",
+    "byline": "",
+    "reporter_bio": "",
+    "icon": "fa-book"
+  },
+  "HIGHER_EDU": {
+    "topic": "Higher Education",
+    "headline": "",
+    "byline": "",
+    "reporter_bio": "",
+    "icon": "fa-graduation-cap"
+  },
+  "TRANSPO": {
+    "topic": "Transportation",
+    "headline": "",
+    "byline": "",
+    "reporter_bio": "",
+    "icon": "fa-car"
+  },
+  "IMMIGRATION": {
+    "topic": "Immigration",
+    "headline": "",
+    "byline": "",
+    "reporter_bio": "",
+    "icon": "fa-group"
+  },
+  "ENERGY": {
+    "topic": "Energy",
+    "headline": "",
+    "byline": "",
+    "reporter_bio": "",
+    "icon": "fa-tint"
+  },
+  "ENVIRO": {
+    "topic": "Environment",
+    "headline": "",
+    "byline": "",
+    "reporter_bio": "",
+    "icon": "fa-tree"
+  },
+  "TEF": {
+    "topic": "Texas Enterprise Fund",
+    "headline": "",
+    "byline": "",
+    "reporter_bio": "",
+    "icon": "fa-money"
+  },
+  "JUSTICE": {
+    "topic": "Criminal Justice",
+    "headline": "",
+    "byline": "",
+    "reporter_bio": "",
+    "icon": "fa-legal"
   }
 }

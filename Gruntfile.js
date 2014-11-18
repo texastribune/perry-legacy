@@ -152,7 +152,9 @@ module.exports = function (grunt) {
 
     nunjucks: {
       options: {
-        data: grunt.file.readJSON('data.json')
+        data: {
+          data: grunt.file.readJSON('data.json')
+        }
       },
       render: {
         files: [{
