@@ -1,5 +1,7 @@
 //Breakpoints
-$prose-bp: new-breakpoint(min-width 500px);
+$banner-bp: new-breakpoint(min-width 600px);
+$prose-bp-large: new-breakpoint(min-width 801px);
+$prose-bp-medium: new-breakpoint(min-width 500px max-width 800px);
 
 body {
   background-color: $white;
@@ -24,13 +26,23 @@ body {
 .banner .grand-header {
   display: block;
   position: absolute;
-  top: 15%;
+  top: 10%;
   width: 100%;
+
+  @include media($banner-bp) {
+    top: 65%;
+  }
+
 }
 
 .prose {
-  @include media($prose-bp) {
+  @include media($prose-bp-large) {
     @include span-columns(8);
     @include shift(2);
+  }
+
+  @include media($prose-bp-medium) {
+    @include span-columns(10);
+    @include shift(1);
   }
 }

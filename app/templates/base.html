@@ -19,18 +19,18 @@
 </head>
 <body>
 
-<div class="masthead">
-  <div class="header">
+<div id="my-header" class="FixedTop">
+  <div class="masthead">
     <a href="#menu"><i class="fa fa-bars"></i></a>
     <p class="mmenu">See Policies</p>
-  </div>
 
-  <div class="container">
-    <div class="branding">
-      <a href="//www.texastribune.org/"><img class="trib-logo" alt="The Texas Tribune" src="//s3.amazonaws.com/apps.texastribune.org/branding/TxTrib-logo-white500x55.png"></a>
+    <div class="container">
+      <div class="branding">
+        <a href="//www.texastribune.org/"><img class="trib-logo" alt="The Texas Tribune" src="//s3.amazonaws.com/apps.texastribune.org/branding/TxTrib-logo-white500x55.png"></a>
+      </div>
     </div>
-  </div>
 
+  </div>
 </div>
 
 {% block content %}{% endblock %}
@@ -73,21 +73,13 @@
 </footer>
 <nav id="menu">
   <ul>
-    <li><a href="#">Home</a></li>
-    <li><a href="#about">About us</a>
-      <ul>
-        <li><a href="#about/history">History</a></li>
-        <li><a href="#about/team">The team</a>
-          <ul>
-            <li><a href="#about/team/management">Management</a></li>
-            <li><a href="#about/team/sales">Sales</a></li>
-            <li><a href="#about/team/development">Development</a></li>
-          </ul>
-        </li>
-        <li><a href="#about/address">Our address</a></li>
-      </ul>
-    </li>
-    <li><a href="#contact">Contact</a></li>
+    {% for key, value in data %}
+      {% if value.topic %}
+      <li class="mmenu">
+        <a href="//s3.amazonaws.com/apps.texastribune.org/perry-legacy/{{ value.slug }}"><i class="fa {{ value.icon }}"></i>{{ value.topic }}</a>
+      </li>
+      {% endif %}
+    {% endfor %}
   </ul>
 </nav>
 
@@ -106,13 +98,12 @@
   ga('create','UA-9827490-7');ga('send','pageview');
 </script>
 <script src="scripts/mmenu/jquery.mmenu.min.js"></script>
-<script type="text/javascript">
-  $(function() {
-    $(document).ready(function() {
-      $("#menu").mmenu({});
-    });
-  });
-</script>
+<script src="scripts/mmenu/addons/jquery.mmenu.fixedelements.min.js"></script>
+   <script type="text/javascript">
+      $(document).ready(function() {
+         $("#menu").mmenu();
+      });
+   </script>
 
 <!-- build:js({app,.tmp}) scripts/main.js -->
 <script src="scripts/main.js"></script>
