@@ -91,6 +91,12 @@
   </ul>
 </nav>
 
+{% macro headline(sheet) %}
+<h1>{{ sheet.headline }}</h1>
+<p class="byline">By <a href="http://www.texastribune.org/about/staff/{{ sheet.reporter-bio }}/">{{ sheet.byline }}</a> | July 0, 2084</p>
+{% endmacro %}
+
+
 <!-- build:js scripts/vendor.js -->
 <!-- bower:js -->
 <script src="../../bower_components/jquery/dist/jquery.js"></script>
