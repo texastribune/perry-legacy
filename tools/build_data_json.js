@@ -7,7 +7,8 @@ marked.setOptions({
 });
 
 var SHEETS = [
-  'Stories'
+  'Stories',
+  'META'
 ];
 
 var DATA = {};

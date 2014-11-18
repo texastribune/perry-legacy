@@ -1,3 +1,11 @@
 {
-  "Stories": []
+  "Stories": [],
+  "META": [
+    {
+      "project_title": "project_subtitle"
+    },
+    {
+      "project_title": "byline"
+    }
+  ]
 }
