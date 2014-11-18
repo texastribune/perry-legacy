@@ -57,7 +57,7 @@ module.exports = function (grunt) {
     connect: {
       options: {
         port: 9000,
-        open: true,
+        open: false,
         livereload: 35729,
         hostname: '0.0.0.0'
       },
@@ -161,6 +161,12 @@ module.exports = function (grunt) {
           src: ['{,*/}*.html', '!templates/*'],
           dest: '.tmp',
           ext: '.html'
+        },{
+          expand: true,
+          cwd: '<%= config.app %>',
+          src: ['styles/**/*.scss'],
+          dest: '.tmp',
+          ext: '.scss'
         }]
       }
     },
@@ -253,7 +259,7 @@ module.exports = function (grunt) {
       },
       sass: {
         files: ['<%= config.app %>/styles/{,*/}*.{scss,sass}'],
-        tasks: ['sass:server', 'autoprefixer']
+        tasks: ['nunjucks', 'wiredep', 'sass:server', 'autoprefixer']
       },
     },
 
