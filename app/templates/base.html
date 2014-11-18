@@ -22,7 +22,7 @@
 <div class="masthead">
   <div class="header">
     <a href="#menu"><i class="fa fa-bars"></i></a>
-    <p class="mmenu">Jump Around</p>
+    <p class="mmenu">See Policies</p>
   </div>
 
   <div class="container">
@@ -108,20 +108,10 @@
 <script src="scripts/mmenu/jquery.mmenu.min.js"></script>
 <script type="text/javascript">
   $(function() {
-    $("nav#menu").mmenu({
-       "offCanvas": {
-          "zposition": "front"
-       }
+    $(document).ready(function() {
+      $("#menu").mmenu({});
     });
   });
-
-  $(function() {
-    $("#menu").mmenu({
-      offCanvas : {
-        position  : "top",
-        zposition : "front"
-      }
-    });
 </script>
 
 <!-- build:js({app,.tmp}) scripts/main.js -->

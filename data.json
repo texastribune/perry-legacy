@@ -1,10 +1,11 @@
 {
-  "META": [
-    {
-      "project_title": "project_subtitle"
-    },
-    {
-      "project_title": "byline"
-    }
-  ]
+  "META": {
+    "project_title": "The Legacy of Gov. Rick Perry",
+    "project_subtitle": "After 14 years in the governor's office, Rick Perry has left a lasting mark on Texas",
+    "byline": ""
+  },
+  "HEALTH": {
+    "topic": "Health Care",
+    "byline": "Alexa Ura"
+  }
 }

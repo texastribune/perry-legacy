@@ -1,6 +1,13 @@
+//Breakpoints
+$prose-bp: new-breakpoint(min-width 500px);
+
+body {
+  background-color: $white;
+}
+
 .masthead .branding {
   text-align: right;
-  margin-right: .5em;
+  padding-right: 1em;
 }
 
 .banner-image {
@@ -12,4 +19,18 @@
   position: absolute;
   right: 0;
   top: 0;
+}
+
+.banner .grand-header {
+  display: block;
+  position: absolute;
+  top: 15%;
+  width: 100%;
+}
+
+.prose {
+  @include media($prose-bp) {
+    @include span-columns(8);
+    @include shift(2);
+  }
 }
