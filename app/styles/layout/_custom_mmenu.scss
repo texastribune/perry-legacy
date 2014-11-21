@@ -4,30 +4,102 @@
   z-index: 1;
 }
 
-  .masthead {
-    position: fixed;
-    top: 0;
-    z-index: 1;
-  }
+.masthead {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
 
-  .fa.fa-bars {
-    font-size: 2em;
-    float: left;
-    margin: .25em 0 .25em .5em;
-  }
+.fa.fa-bars {
+  float: left;
+  font-size: 2em;
+  margin: .25em 0 .25em .5em;
+}
 
-  p.mmenu {
-    color: $white;
-    float: left;
-    margin: 1em;
-  }
+p.mmenu {
+  color: $white;
+  float: left;
+  margin: 1em;
+}
 
 
-  li.mmenu {
-    .fa {
-      font-size: 1.5em;
-      margin-right: 1em;
-      width: 1em;
-    }
+li.mmenu {
+  .fa {
+    font-size: 1.5em;
+    margin-right: 1em;
+    width: 1em;
   }
+}
+
+
+/* btn */
+.menu-icon {
+  display:  inline-block;
+  float: left;
+  height: 30px;
+  margin: .25em 0 .25em .5em;
+  position: relative;
+  width: 30px;
+
+}
+.menu-icon span {
+  margin: 0 auto;
+  position: relative;
+  top: 12px;
+  transition-duration: 0s;
+  transition-delay: .2s;
+}
+
+.menu-icon span:before, .menu-icon span:after {
+  position: absolute;
+  content: '';
+  transition-property: margin, transform;
+  transition-duration: .2s;
+  transition-delay: .2s, 0;
+}
+.menu-icon span, .menu-icon span:before, .menu-icon span:after {
+  width: 30px;
+  height: 6px;
+  background-color: #ccc;
+  display: block;
+}
+.menu-icon span:before {
+  margin-top: -12px;
+}
+.menu-icon span:after {
+  margin-top: 12px;
+}
+/* --- btn --- */
+
+/* example 5 */
+// .example5 span {
+//   transition-duration: 0s;
+//   transition-delay: .2s;
+// }
+
+// .example5 span:before {
+//   transition-property: margin, transform;
+//   transition-duration: .2s;
+//   transition-delay: .2s, 0;
+// }
+
+// .example5 span:after {
+//   transition-property: margin, transform;
+//   transition-duration: .2s;
+//   transition-delay: .2s, 0;
+// }
+.x span {
+  background-color: rgba(0,0,0,0.0);
+  transition-delay: .2s;
+}
+.x span:before {
+  margin-top: 0;
+  transform: rotate(45deg);
+  transition-delay: 0, .2s;
+}
+.x span:after {
+  margin-top: 0;
+  transform: rotate(-45deg);
+  transition-delay: 0, .2s;
+}
 
