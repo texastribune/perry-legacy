@@ -16,13 +16,15 @@
   <!-- endbuild -->
 
   <link href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css" rel="stylesheet">
+
 </head>
 <body>
 
 <div id="my-header" class="FixedTop">
   <div class="masthead">
-    <a href="#menu"><i class="fa fa-bars"></i></a>
-    <p class="mmenu">See Policies</p>
+    <a href="#menu" class="menu-icon"><span></span></a>
+    <p class="mmenu">Policies</p>
+
 
     <div class="container">
       <div class="branding">
@@ -97,17 +99,22 @@
   s.parentNode.insertBefore(i,s)}(window,document,'script','ga'));
   ga('create','UA-9827490-7');ga('send','pageview');
 </script>
-<script src="scripts/mmenu/jquery.mmenu.min.js"></script>
-<script src="scripts/mmenu/addons/jquery.mmenu.fixedelements.min.js"></script>
-   <script type="text/javascript">
-      $(document).ready(function() {
-         $("#menu").mmenu();
-      });
-   </script>
 
 <!-- build:js({app,.tmp}) scripts/main.js -->
+<script src="scripts/mmenu/jquery.mmenu.min.js"></script>
+<script src="scripts/mmenu/addons/jquery.mmenu.fixedelements.min.js"></script>
 <script src="scripts/main.js"></script>
 <!-- endbuild -->
-
+<script type="text/javascript">
+  $(document).ready(function() {
+     $("#menu").mmenu()
+     .on( "opened.mm", function() {
+        $(".menu-icon").toggleClass("x");
+     })
+     .on ( "closed.mm", function() {
+        $(".menu-icon").toggleClass("x");
+     });
+  });
+ </script>
 </body>
 </html>

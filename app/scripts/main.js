@@ -6,6 +6,7 @@ function setHeight(target, reference) {
 
 $(document).ready(function() {
   setHeight('.banner', window);
+  // $("#menu").mmenu();
 });
 
 // Reset heights/positions on window resize
@@ -16,3 +17,7 @@ $(window).resize(function() {
 $(window).on( "orientationchange", function() {
   setHeight('.banner', window);
 });
+
+// $("#menu").click(function(){
+//   $(".menu-icon").toggleClass("x");
+// });
