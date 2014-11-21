@@ -36,58 +36,46 @@ li.mmenu {
 .menu-icon {
   display:  inline-block;
   float: left;
-  height: 30px;
-  margin: .25em 0 .25em .5em;
+  height: 2em;
+  margin: .25em .5em 1em;
   position: relative;
-  width: 30px;
+  width: 2em;
 
 }
 .menu-icon span {
   margin: 0 auto;
   position: relative;
-  top: 12px;
+  top: 1em;
   transition-duration: 0s;
   transition-delay: .2s;
 }
 
-.menu-icon span:before, .menu-icon span:after {
+.menu-icon span:before,
+.menu-icon span:after {
   position: absolute;
   content: '';
   transition-property: margin, transform;
   transition-duration: .2s;
   transition-delay: .2s, 0;
 }
-.menu-icon span, .menu-icon span:before, .menu-icon span:after {
-  width: 30px;
-  height: 6px;
+
+.menu-icon span,
+.menu-icon span:before,
+.menu-icon span:after {
+  width: 2em;
+  height: .4em;
   background-color: #ccc;
   display: block;
 }
+
 .menu-icon span:before {
-  margin-top: -12px;
+  margin-top: -.75em;
 }
+
 .menu-icon span:after {
-  margin-top: 12px;
+  margin-top: .75em;
 }
-/* --- btn --- */
 
-/* example 5 */
-// .example5 span {
-//   transition-duration: 0s;
-//   transition-delay: .2s;
-// }
-
-// .example5 span:before {
-//   transition-property: margin, transform;
-//   transition-duration: .2s;
-//   transition-delay: .2s, 0;
-// }
-
-// .example5 span:after {
-//   transition-property: margin, transform;
-//   transition-duration: .2s;
-//   transition-delay: .2s, 0;
-// }
 .x span {
   background-color: rgba(0,0,0,0.0);
   transition-delay: .2s;
