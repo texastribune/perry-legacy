@@ -19,6 +19,10 @@ $(window).on( 'orientationchange', function() {
   setHeight('.banner', window);
 });
 
+$("#menu").click(function(){
+  $(".menu-icon").toggleClass("x");
+});
+
 (function () {
   'use strict';
 
