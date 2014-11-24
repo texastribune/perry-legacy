@@ -58,7 +58,7 @@ body {
 }
 
 .app-bar.open,
-.app-bar.open ~ main {
+.app-bar.open ~ .main {
   transform: translate(250px, 0);
 }
 
@@ -72,6 +72,7 @@ body {
   overflow-y: auto;
   transform: translate(-250px, 0);
   width: 250px;
+  height: 100%;
   z-index: 1;
 
   &.open {
@@ -126,11 +127,11 @@ body {
 
 .app-bar,
 .navdrawer-container.opened,
-main {
+.main {
   transition: transform .3s ease-out;
 }
 
-main {
+.main {
   margin: 0 auto;
   min-height: 100%;
 }
