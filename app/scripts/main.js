@@ -19,9 +19,9 @@ $(window).on( 'orientationchange', function() {
   setHeight('.banner', window);
 });
 
-$("#menu").click(function(){
-  $(".menu-icon").toggleClass("x");
-});
+// $("#menu").click(function(){
+//   $(".menu-icon").toggleClass("x");
+// });
 
 (function () {
   'use strict';
@@ -33,6 +33,7 @@ $("#menu").click(function(){
   var appbarElement = querySelector('.app-bar');
   var menuBtn = querySelector('.menu');
   var main = querySelector('.main');
+  var icon = querySelector('.menu-icon');
 
   function closeMenu() {
     body.classList.remove('open');
@@ -45,6 +46,7 @@ $("#menu").click(function(){
     appbarElement.classList.toggle('open');
     navdrawerContainer.classList.toggle('open');
     navdrawerContainer.classList.add('opened');
+    icon.classList.toggle('x');
   }
 
   main.addEventListener('click', closeMenu);
