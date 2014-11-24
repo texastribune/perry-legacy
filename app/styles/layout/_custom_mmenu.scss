@@ -1,23 +1,17 @@
-#my-header {
-  position: fixed;
-  top: 0;
-  z-index: 1;
-}
+// .masthead {
+//   position: fixed;
+//   top: 0;
+//   z-index: 1;
+// }
 
-.masthead {
-  position: fixed;
-  top: 0;
-  z-index: 1;
-}
-
-p.mmenu {
+p.menu {
   color: $white;
   float: left;
   margin: 1em;
 }
 
 
-li.mmenu {
+li.menu {
   .fa {
     font-size: 1.5em;
     margin-right: 1em;

@@ -26,15 +26,10 @@ body.open {
 }
 
 .app-bar-container {
-  // display: -webkit-flex;
-  // display: -ms-flexbox;
-  // display: flex;
+  background-color: $masthead-black;
   width: 100%;
   height: 60px;
   position: relative;
-  // -webkit-flex-direction: row;
-  // -ms-flex-direction: row;
-  // flex-direction: row;
   margin: 0 auto;
 }
 
@@ -45,9 +40,6 @@ body.open {
 }
 
 .app-bar .logo {
-  // -webkit-flex: 1;
-  // -ms-flex: 1;
-  // flex: 1;
   font-size: 2em;
   line-height: 60px;
   margin: 0 16px;
@@ -66,12 +58,6 @@ body.open {
 }
 
 .app-bar-actions {
-  // display: -webkit-flex;
-  // display: -ms-flexbox;
-  // display: flex;
-  // -webkit-flex-direction: row;
-  // -ms-flex-direction: row;
-  // flex-direction: row;
   z-index: 2;
 }
 
@@ -127,11 +113,10 @@ ol {
 }
 
 .navdrawer-container {
+  background-color: $masthead-black;
   z-index: 1;
-  top: 0;
-  bottom: 0;
+  display: none;
   width: 250px;
-  height: 100%;
   -webkit-transform: translate(-250px, 0);
   transform: translate(-250px, 0);
   overflow-y: auto;
@@ -140,6 +125,8 @@ ol {
 .navdrawer-container.open {
   -webkit-transform: translate(0, 0);
   transform: translate(0, 0);
+  display: block;
+  position: fixed;
 }
 
 .app-bar,
@@ -151,9 +138,9 @@ main {
 
 .navdrawer-container h4,
 .navdrawer-container ul li a {
-  height: 60px;
-  padding: 17px 20px;
-  line-height: 1.4;
+  height: 40px;
+  padding: 12px 20px;
+  line-height: 1em;
 }
 
 .navdrawer-container h4 {
@@ -174,6 +161,7 @@ main {
   -webkit-transition: background-color 0.2s ease-out;
   transition: background-color 0.2s ease-out;
   white-space: nowrap;
+  font-size: .8em;
 }
 
 .navdrawer-container ul li {
@@ -203,88 +191,83 @@ main {
 main {
   margin: 0 auto;
   /* Height of the header */
-  padding: 60px 16px 16px 16px;
+  // padding: 60px 16px 16px 16px;
   min-height: 100%;
 }
 
-/** Larger Screens - desktops and tablets **/
-@media all and (min-width: 990px) {
-  .app-bar {
-    position: relative;
-  }
-
-  .app-bar.open,
-  .app-bar.open ~ main {
-    -webkit-transform: translate(0px, 0);
-    transform: translate(0px, 0);
-  }
-
-  .app-bar-container {
-    display: block;
-    height: 130px;
-    max-width: 864px;
-    padding: 0 16px;
-    box-sizing: border-box;
-    background-color: #4285f4;
-  }
-
-  .app-bar .logo {
-    float: left;
-    margin: 0;
-    padding: 0;
-    line-height: 130px;
-    font-size: 46px;
-  }
-
-  .app-bar-actions {
-    float: right;
-  }
-
-  .app-bar::after {
-    content: ' ';
-    display: block;
-    height: 0;
-    overflow: hidden;
-    clear: both;
-  }
-
-  button.menu {
-    display: none;
-  }
-
-  .navdrawer-container {
-    position: relative;
-    width: 100%;
-    height: auto;
-    margin-top: 0;
-    -webkit-transform: translate(0, 0);
-    transform: translate(0, 0);
-    -webkit-transition: none;
-    transition: none;
-    overflow-y: auto;
-  }
-
-  .navdrawer-container h4 {
-    display: none;
-  }
-
-  .navdrawer-container ul {
-    display: inline-block;
-    max-width: 864px;
-    margin: 0 auto;
-  }
-
-  .navdrawer-container ul li {
-    border: none;
-  }
-
-  main {
-    max-width: 864px;
-    padding-top: 0;
-    min-height: initial;
-  }
-
-  body {
-    overflow-y: scroll;
-  }
+p.menu {
+  color: $white;
+  float: left;
+  margin: 1em;
 }
+
+li.menu {
+  .fa {
+    font-size: 1em;
+    margin-right: 1em;
+    width: 1em;
+  }
+
+}
+
+
+/* btn */
+.menu-icon {
+  display:  inline-block;
+  float: left;
+  height: 1.25em;
+  margin: .25em .5em 1em;
+  position: relative;
+  width: 1.25em;
+
+}
+.menu-icon span {
+  margin: 0 auto;
+  position: relative;
+  top: 1em;
+  transition-duration: 0s;
+  transition-delay: .2s;
+}
+
+.menu-icon span:before,
+.menu-icon span:after {
+  position: absolute;
+  content: '';
+  transition-property: margin, transform;
+  transition-duration: .2s;
+  transition-delay: .2s, 0;
+}
+
+.menu-icon span,
+.menu-icon span:before,
+.menu-icon span:after {
+  width: 2em;
+  height: .4em;
+  background-color: #ccc;
+  display: block;
+}
+
+.menu-icon span:before {
+  margin-top: -.75em;
+}
+
+.menu-icon span:after {
+  margin-top: .75em;
+}
+
+.x span {
+  background-color: rgba(0,0,0,0.0);
+  transition-delay: .2s;
+}
+.x span:before {
+  margin-top: 0;
+  transform: rotate(45deg);
+  transition-delay: 0, .2s;
+}
+.x span:after {
+  margin-top: 0;
+  transform: rotate(-45deg);
+  transition-delay: 0, .2s;
+}
+
+

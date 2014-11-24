@@ -19,37 +19,34 @@
 
 </head>
 <body>
-  <div class="masthead app-bar promote-layer">
+  <header class="masthead app-bar promote-layer">
     <div class="app-bar-container">
       <button class="menu"><i class="fa fa-bicycle"></i></button>
       <section class="app-bar-actions">
       <!-- Put App Bar Buttons Here -->
       <!-- e.g <button><i class="icon icon-star"></i></button> -->
+        <p class="menu">Policies</p>
+
+        <div class="container">
+          <div class="branding">
+            <a href="//www.texastribune.org/"><img class="trib-logo desktop" alt="The Texas Tribune" src="//s3.amazonaws.com/apps.texastribune.org/branding/TxTrib-logo-white500x55.png"></a>
+            <a href="//www.texastribune.org/"><img class="trib-logo mobile" alt="The Texas Tribune" src="//s3.amazonaws.com/apps.texastribune.org/branding/TT-logo-white.dd56ad79c0da.png"></a>
+          </div>
+        </div>
       </section>
     </div>
-    <nav class="navdrawer-container">
-      <ul>
-        {% for key, value in data %}
-          {% if value.topic %}
-          <li>
-            <a href="//s3.amazonaws.com/apps.texastribune.org/perry-legacy/{{ value.slug }}"><i class="fa {{ value.icon }}"></i>{{ value.topic }}</a>
-          </li>
-          {% endif %}
-        {% endfor %}
-      </ul>
-    </nav>
-    <p class="mmenu">Policies</p>
-
-
-    <div class="container">
-      <div class="branding">
-        <a href="//www.texastribune.org/"><img class="trib-logo desktop" alt="The Texas Tribune" src="//s3.amazonaws.com/apps.texastribune.org/branding/TxTrib-logo-white500x55.png"></a>
-        <a href="//www.texastribune.org/"><img class="trib-logo mobile" alt="The Texas Tribune" src="//s3.amazonaws.com/apps.texastribune.org/branding/TT-logo-white.dd56ad79c0da.png"></a>
-      </div>
-    </div>
-
-  </div>
-
+  </header>
+  <nav class="navdrawer-container">
+    <ul>
+      {% for key, value in data %}
+        {% if value.topic %}
+        <li class="menu">
+          <a href="//s3.amazonaws.com/apps.texastribune.org/perry-legacy/{{ value.slug }}"><i class="fa {{ value.icon }}"></i>{{ value.topic }}</a>
+        </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </nav>
 {% block content %}{% endblock %}
 
 
