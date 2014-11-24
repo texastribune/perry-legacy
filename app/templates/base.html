@@ -19,10 +19,25 @@
 
 </head>
 <body>
-
-<div id="my-header">
-  <div class="masthead FixedTop">
-    <a href="#menu" class="menu-icon"><span></span></a>
+  <div class="masthead app-bar promote-layer">
+    <div class="app-bar-container">
+      <button class="menu"><i class="fa fa-bicycle"></i></button>
+      <section class="app-bar-actions">
+      <!-- Put App Bar Buttons Here -->
+      <!-- e.g <button><i class="icon icon-star"></i></button> -->
+      </section>
+    </div>
+    <nav class="navdrawer-container">
+      <ul>
+        {% for key, value in data %}
+          {% if value.topic %}
+          <li>
+            <a href="//s3.amazonaws.com/apps.texastribune.org/perry-legacy/{{ value.slug }}"><i class="fa {{ value.icon }}"></i>{{ value.topic }}</a>
+          </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </nav>
     <p class="mmenu">Policies</p>
 
 
@@ -34,7 +49,6 @@
     </div>
 
   </div>
-</div>
 
 {% block content %}{% endblock %}
 
@@ -74,17 +88,7 @@
     </div>
   </div>
 </footer>
-<nav id="menu">
-  <ul>
-    {% for key, value in data %}
-      {% if value.topic %}
-      <li class="mmenu">
-        <a href="//s3.amazonaws.com/apps.texastribune.org/perry-legacy/{{ value.slug }}"><i class="fa {{ value.icon }}"></i>{{ value.topic }}</a>
-      </li>
-      {% endif %}
-    {% endfor %}
-  </ul>
-</nav>
+
 
 <!-- build:js scripts/vendor.js -->
 <!-- bower:js -->
@@ -102,20 +106,9 @@
 </script>
 
 <!-- build:js({app,.tmp}) scripts/main.js -->
-<script src="scripts/mmenu/jquery.mmenu.min.js"></script>
-<script src="scripts/mmenu/addons/jquery.mmenu.fixedelements.min.js"></script>
 <script src="scripts/main.js"></script>
 <!-- endbuild -->
 <script type="text/javascript">
-  $(document).ready(function() {
-     $("#menu").mmenu()
-     .on( "opened.mm", function() {
-        $(".menu-icon").toggleClass("x");
-     })
-     .on ( "closed.mm", function() {
-        $(".menu-icon").toggleClass("x");
-     });
-  });
- </script>
+</script>
 </body>
 </html>
