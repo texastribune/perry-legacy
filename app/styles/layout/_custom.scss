@@ -45,12 +45,8 @@ body {
 .banner .grand-header {
   display: block;
   position: absolute;
-  top: 10%;
+  bottom: 5%;
   width: 100%;
-
-  @include media($banner-bp) {
-    top: 65%;
-  }
 
 }
 
