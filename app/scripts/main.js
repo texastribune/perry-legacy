@@ -2,7 +2,7 @@
 
 function setHeight() {
   var fullHeight = $(window).innerHeight();
-  var shortHeight = $(window).height() * 0.7;
+  var shortHeight = $(window).height() * 0.8;
 
   $('.landing-banner').css('height', fullHeight);
   $('.small-banner').css('height', shortHeight);
