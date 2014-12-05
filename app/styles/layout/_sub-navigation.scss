@@ -2,7 +2,7 @@ $sub-nav-bp: new-breakpoint(min-width 500px);
 
 .sub-navigation {
   .story-link {
-  @include span-columns(8);
+    @include span-columns(8);
 
     @include media($sub-nav-bp) {
       @include span-columns(4 of 8);
@@ -17,6 +17,12 @@ $sub-nav-bp: new-breakpoint(min-width 500px);
     font-size: 1.5em;
     margin-right: 1em;
     width: 1em;
+  }
+
+  a {
+    .fa {
+      color: $bodytext-black;
+    }
   }
 
   }

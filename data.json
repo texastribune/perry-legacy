@@ -20,8 +20,9 @@
     "slug": "transportation",
     "lead_art": "",
     "img_1": "http://s3.amazonaws.com/static.texastribune.org/media/images/SH130-4.jpg",
-    "img_1_caption": "Governor Rick Perry with large scissors at the opening ceremonies for the final southern portion of SH130 toll road from Georgetown, TX north of Austin to Seguin near San Antonio. Texas Governor Rick Perry helped with the ribbon cutting ceremony on the highway near Lockhart, Texas in Caldwell County.",
-    "img_1_credit": "Bob Daemmrich"
+    "img_1_caption": "Governor Rick Perry with large scissors at the opening ceremonies for the final southern portion of SH130 toll road from Georgetown, TX north of Austin to Seguin near San Antonio.",
+    "img_1_credit": "Bob Daemmrich",
+    "text_1": "<p>Lorem ipsum dolor sit amet, <a href=\"http://\">consectetur</a> adipiscing elit. Ut condimentum erat at lacinia egestas. Curabitur vitae nunc molestie, gravida nisi eu, tempor augue. Vestibulum mollis at quam ac ultricies. Morbi maximus, ex sit amet ultrices porta, justo nulla sagittis sem, quis imperdiet nulla felis lacinia purus. Ut nisi velit, scelerisque at leo ac, rutrum molestie leo. Mauris efficitur nisl et pharetra sagittis. Nulla ornare sit amet erat non cursus. Sed sit amet diam nec elit tempor sollicitudin. Nunc rutrum, elit et pellentesque euismod, mauris erat dignissim augue, et scelerisque ipsum odio vel nibh. Aenean ac nisi nisi. Proin aliquam, justo nec dictum ullamcorper, lacus lectus ultricies ex, quis venenatis purus ligula et diam. Aliquam at magna purus. Curabitur pulvinar urna vel leo malesuada, eget volutpat dolor sollicitudin. Etiam imperdiet leo ut mollis venenatis.</p>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut condimentum erat at lacinia egestas. Curabitur vitae nunc molestie, gravida nisi eu, tempor augue. Vestibulum mollis at quam ac ultricies. Morbi maximus, ex sit amet ultrices porta, justo nulla sagittis sem, quis imperdiet nulla felis lacinia purus. Ut nisi velit, scelerisque at leo ac, rutrum molestie leo. Mauris efficitur nisl et pharetra sagittis. Nulla ornare sit amet erat non cursus. Sed sit amet diam nec elit tempor sollicitudin. Nunc rutrum, elit et pellentesque euismod, mauris erat dignissim augue, et scelerisque ipsum odio vel nibh. Aenean ac nisi nisi. Proin aliquam, justo nec dictum ullamcorper, lacus lectus ultricies ex, quis venenatis purus ligula et diam. Aliquam at magna purus. Curabitur pulvinar urna vel leo malesuada, eget volutpat dolor sollicitudin. Etiam imperdiet leo ut mollis venenatis.</p>\n"
   },
   "HEALTH": {
     "topic": "Health Care",
@@ -48,7 +49,7 @@
     "topic": "Energy",
     "headline": "",
     "byline": "<p><a href=\"http://www.texastribune.org/about/staff/jim-malewitz/\">Jim Malewitz</a></p>\n",
-    "icon": "fa-tint",
+    "icon": "fa-bolt",
     "slug": "energy"
   },
   "ENVIRO": {
@@ -62,7 +63,7 @@
     "topic": "Immigration",
     "headline": "",
     "byline": "<p><a href=\"http://www.texastribune.org/about/staff/julian-aguilar/\">Julian Aguilar</a></p>\n",
-    "icon": "fa-group",
+    "icon": "fa-globe",
     "slug": "immigration"
   },
   "JUSTICE": {

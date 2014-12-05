@@ -46,6 +46,12 @@ body {
 
 }
 
+.container {
+  &:after {
+    margin-bottom: 2em;
+  }
+}
+
 .prose {
   @include media($prose-bp-large) {
     @include span-columns(8);
