@@ -6,3 +6,21 @@
   <div class="byline">By {{ sheet.byline }} | July 0, 2084</div>
 </header>
 {% endmacro %}
+
+
+<!-- SHARELINE -->
+
+{% macro shareline(sheet) %}
+  <div class="row share-row">
+    <a target="_blank" title="share on Twitter" href="http://twitter.com/share?text=Check out the Texas Hospitals Explorer and learn more about quality of care at Texas' 377 hospitals&url=http://hospitals.texastribune.org/&hashtags=txhospitals">
+      <div class="share-cell first-share">
+        <i class="fa fa-twitter"></i> Tweet
+      </div>
+    </a>
+    <a target="_blank" title="share on Facebook" href="http://www.facebook.com/sharer.php?u=http://hospitals.texastribune.org/">
+      <div class="share-cell">
+        <i class="fa fa-facebook"></i> Recommend
+      </div>
+    </a>
+  </div>
+{% endmacro %}
