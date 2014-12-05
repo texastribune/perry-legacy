@@ -21,6 +21,10 @@ body {
   top: 0;
 }
 
+.block-text {
+  margin-bottom: 1em;
+}
+
 .byline {
   display: inline-block;
   margin-bottom: 1em;
@@ -36,9 +40,20 @@ body {
 
 .grand-header {
   h1.subtitle {
-    font-family: $base-sans-serif;
-    font-size: 2.5em;
-    font-weight: 400;
+    @include media(new-breakpoint(min-width 480px)) {
+      font-family: $base-sans-serif;
+      font-size: 2.5em;
+      font-weight: 400;
+    }
+  }
+
+  h1.subtitle,
+  p {
+    display: none;
+
+    @include media(new-breakpoint(min-width 480px)) {
+      display: block;
+    }
   }
 }
 
@@ -80,5 +95,9 @@ body {
   @include media($prose-bp-medium) {
     @include span-columns(10);
     @include shift(1);
+  }
+
+  ul li:last-child {
+    margin-bottom: 2em;
   }
 }

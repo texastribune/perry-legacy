@@ -20,6 +20,10 @@ $sub-nav-bp: new-breakpoint(min-width 500px);
 
     li {
       margin-bottom: 1em;
+
+      &:last-child {
+        margin-bottom: 2em;
+      }
     }
 
   }

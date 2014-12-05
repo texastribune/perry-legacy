@@ -1,27 +1,25 @@
 // Set element height based on height of reference element
 
-function setHeight(target, reference) {
-  var refHeight = $(reference).innerHeight();
-  $(target).css('height', refHeight);
+function setHeight() {
+  var fullHeight = $(window).innerHeight();
+  var shortHeight = $(window).height() * 0.7;
+
+  $('.landing-banner').css('height', fullHeight);
+  $('.small-banner').css('height', shortHeight);
 }
 
 $(document).ready(function() {
-  setHeight('.banner', window);
-  // $("#menu").mmenu();
+  setHeight();
 });
 
 // Reset heights/positions on window resize
 $(window).resize(function() {
-  setHeight('.banner', window);
+  setHeight();
 });
 
 $(window).on( 'orientationchange', function() {
-  setHeight('.banner', window);
+  setHeight();
 });
-
-// $("#menu").click(function(){
-//   $(".menu-icon").toggleClass("x");
-// });
 
 (function () {
   'use strict';
