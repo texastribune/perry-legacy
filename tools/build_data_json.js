@@ -9,15 +9,15 @@ marked.setOptions({
 var SHEETS = [
   'META',
   'OVERVIEW',
-  'HEALTH',
-  'PUBLIC_EDU',
-  'HIGHER_EDU',
   'TRANSPO',
-  'IMMIGRATION',
+  'HEALTH',
+  'HIGHER_EDU',
+  'PUBLIC_EDU',
   'ENERGY',
   'ENVIRO',
-  'TEF',
-  'JUSTICE'
+  'IMMIGRATION',
+  'JUSTICE',
+  'TEF'
 ];
 
 var DATA = {};
