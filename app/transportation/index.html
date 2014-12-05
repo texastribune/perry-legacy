@@ -9,7 +9,7 @@
     <div class="banner-image"></div>
     <header class="grand-header content-block">
       <h1><a href="//s3.amazonaws.com/apps.texastribune.org/perry-legacy/">{{ data.META.project_title }}</a></h1>
-      <h1><em>On {{ data.TRANSPO.topic }}</em></h1>
+      <h1>On {{ data.TRANSPO.topic }}</h1>
     </header>
   </div>
 
@@ -23,9 +23,13 @@
         <p class="caption">{{ data.TRANSPO.img_1_caption }} Photo by {{ data.TRANSPO.img_1_credit }}</p>
       </div>
       <p>Aenean viverra tellus eleifend odio vehicula vehicula. Nulla sit amet diam facilisis, maximus arcu eget, eleifend purus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec eget tortor ac augue commodo mattis. Ut ultrices, magna sagittis suscipit sollicitudin, lectus metus vulputate elit, in consectetur risus nibh a lectus. Vestibulum aliquet tortor metus, eu dignissim felis congue vulputate. Ut lacinia est a elit varius, vel dictum massa consequat. Donec at euismod diam. Fusce vitae iaculis odio. Integer blandit leo ut venenatis lacinia. Morbi ac sagittis dui. Etiam ex nibh, lacinia sit amet ex a, accumsan molestie nisi. Aenean ac felis luctus, tincidunt dui eget, venenatis erat.</p>
+      <div class="block-text">
+        <h2>“You know what’s awesome? Cats. Cats are awesome.”</h2>
+        <p class="source">— Becca Aaronson, cat enthusiast</p>
+      </div>
 
       <div class="sub-navigation">
-        <h2>Keep reading:</h2>
+        <h3>Keep reading:</h3>
         <ul>
         {% for key, value in data %}
           {% if value.topic %}
