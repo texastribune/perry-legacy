@@ -1,0 +1,4 @@
+//Breakpoints
+$banner-bp: new-breakpoint(min-width 600px);
+$prose-bp-large: new-breakpoint(min-width 801px);
+$prose-bp-medium: new-breakpoint(min-width 500px max-width 800px);

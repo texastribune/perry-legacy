@@ -51,7 +51,6 @@ body {
 
 .app-bar-container {
   background-color: $masthead-black;
-  height: 60px;
   margin: 0 auto;
   position: relative;
   width: 100%;
@@ -121,6 +120,10 @@ body {
     &:active {
       background-color: rgba(255, 255, 255, .4);
     }
+
+    @include media($banner-bp) {
+      font-size: 1em;
+    }
   }
 
 }
@@ -139,7 +142,7 @@ body {
 p.menu {
   color: $white;
   float: left;
-  margin: 1em;
+  margin: 1em .5em;
 }
 
 li.menu {
@@ -162,32 +165,32 @@ li.menu {
   span {
     background-color: #ccc;
     display: block;
-    height: .4em;
+    height: .2em;
     margin: 0 auto;
     position: relative;
     transition-delay: .2s;
     transition-duration: 0;
-    width: 2em;
+    width: 1.75em;
 
     &:before,
     &:after {
       background-color: #ccc;
       content: '';
       display: block;
-      height: .4em;
+      height: .2em;
       position: absolute;
       transition-delay: .2s, 0;
       transition-duration: .2s;
       transition-property: margin, transform;
-      width: 2em;
+      width: 1.75em;
     }
 
     &:before {
-      margin-top: -.75em;
+      margin-top: -.5em;
     }
 
     &:after {
-      margin-top: .75em;
+      margin-top: .5em;
     }
   }
 }
@@ -209,5 +212,11 @@ li.menu {
   }
 }
 
+span.menu-hide {
+  display: none;
 
+  @include media($banner-bp) {
+    display: inline-block;
+  }
+}
 

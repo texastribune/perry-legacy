@@ -1,6 +1,8 @@
 <!-- HEADLINE -->
 
 {% macro headline(sheet) %}
+<header>
   <h1>{{ sheet.headline }}</h1>
-  <p class="byline">By <a href="{{ sheet.reporter-bio }}/">{{ sheet.byline }}</a> | July 0, 2084</p>
+  <div class="byline">By {{ sheet.byline }} | July 0, 2084</div>
+</header>
 {% endmacro %}

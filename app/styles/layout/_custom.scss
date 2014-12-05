@@ -1,8 +1,3 @@
-//Breakpoints
-$banner-bp: new-breakpoint(min-width 600px);
-$prose-bp-large: new-breakpoint(min-width 801px);
-$prose-bp-medium: new-breakpoint(min-width 500px max-width 800px);
-
 body {
   background-color: $white;
 }
@@ -22,6 +17,7 @@ body {
 
     &.mobile {
       display: inline-block;
+      height: 2em;
 
       @include media($banner-bp) {
         display: none;
@@ -60,4 +56,17 @@ body {
     @include span-columns(10);
     @include shift(1);
   }
+}
+
+.byline {
+  display: inline-block;
+  margin-bottom: 1em;
+
+  p {
+    display: inline-block;
+  }
+}
+
+.media {
+  margin-bottom: 1em;
 }

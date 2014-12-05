@@ -3,11 +3,8 @@
 
 @import 'newsapps-styles/initialize';
 
-/*
-  jQuery.mmenu CSS
-*/
-
+@import 'helpers/utils';
 @import 'layout/starter-menu';
-
 @import 'layout/custom';
 @import 'layout/sub-navigation';
+

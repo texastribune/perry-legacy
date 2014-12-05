@@ -12,76 +12,71 @@
     "icon": "fa-star",
     "slug": "index"
   },
+  "TRANSPO": {
+    "topic": "Transportation",
+    "headline": "Headline",
+    "byline": "<p><a href=\"http://www.texastribune.org/about/staff/aman-batheja/\">Aman Batheja</a></p>\n",
+    "icon": "fa-car",
+    "slug": "transportation",
+    "lead_art": "",
+    "img_1": "http://s3.amazonaws.com/static.texastribune.org/media/images/SH130-4.jpg",
+    "img_1_caption": "Governor Rick Perry with large scissors at the opening ceremonies for the final southern portion of SH130 toll road from Georgetown, TX north of Austin to Seguin near San Antonio. Texas Governor Rick Perry helped with the ribbon cutting ceremony on the highway near Lockhart, Texas in Caldwell County.",
+    "img_1_credit": "Bob Daemmrich"
+  },
   "HEALTH": {
     "topic": "Health Care",
     "headline": "Gov. Rick Perry's Impact on Texas Health Care",
-    "byline": "Alexa Ura",
-    "reporter_bio": "http://www.texastribune.org/about/staff/",
+    "byline": "<p><a href=\"http://www.texastribune.org/about/staff/alexa-ura/\">Alexa Ura</a> and <a href=\"http://www.texastribune.org/about/staff/edgar-walters/\">Edgar Walters</a></p>\n",
     "icon": "fa-plus-square",
     "slug": "health-care"
-  },
-  "PUBLIC_EDU": {
-    "topic": "Public Education",
-    "headline": "",
-    "byline": "",
-    "reporter_bio": "",
-    "icon": "fa-book",
-    "slug": "public-education"
   },
   "HIGHER_EDU": {
     "topic": "Higher Education",
     "headline": "",
-    "byline": "",
-    "reporter_bio": "",
+    "byline": "<p><a href=\"http://www.texastribune.org/about/staff/reeve-hamilton/\">Reeve Hamilton</a></p>\n",
     "icon": "fa-graduation-cap",
     "slug": "higher-education"
   },
-  "TRANSPO": {
-    "topic": "Transportation",
+  "PUBLIC_EDU": {
+    "topic": "Public Education",
     "headline": "",
-    "byline": "",
-    "reporter_bio": "",
-    "icon": "fa-car",
-    "slug": "transportation"
-  },
-  "IMMIGRATION": {
-    "topic": "Immigration",
-    "headline": "",
-    "byline": "",
-    "reporter_bio": "",
-    "icon": "fa-group",
-    "slug": "immigration"
+    "byline": "<p><a href=\"http://www.texastribune.org/about/staff/morgan-smith/\">Morgan Smith</a></p>\n",
+    "icon": "fa-book",
+    "slug": "public-education"
   },
   "ENERGY": {
     "topic": "Energy",
     "headline": "",
-    "byline": "",
-    "reporter_bio": "",
+    "byline": "<p><a href=\"http://www.texastribune.org/about/staff/jim-malewitz/\">Jim Malewitz</a></p>\n",
     "icon": "fa-tint",
     "slug": "energy"
   },
   "ENVIRO": {
     "topic": "Environment",
     "headline": "",
-    "byline": "",
-    "reporter_bio": "",
+    "byline": "<p><a href=\"http://www.texastribune.org/about/staff/neena-satija/\">Neena Satija</a></p>\n",
     "icon": "fa-tree",
     "slug": "environment"
   },
-  "TEF": {
-    "topic": "Texas Enterprise Fund",
+  "IMMIGRATION": {
+    "topic": "Immigration",
     "headline": "",
-    "byline": "",
-    "reporter_bio": "",
-    "icon": "fa-money",
-    "slug": "texas-enterprise-fund"
+    "byline": "<p><a href=\"http://www.texastribune.org/about/staff/julian-aguilar/\">Julian Aguilar</a></p>\n",
+    "icon": "fa-group",
+    "slug": "immigration"
   },
   "JUSTICE": {
     "topic": "Criminal Justice",
     "headline": "",
-    "byline": "",
-    "reporter_bio": "",
+    "byline": "<p><a href=\"http://www.texastribune.org/about/staff/terri-langford/\">Terri Langford</a></p>\n",
     "icon": "fa-legal",
     "slug": "criminal-justice"
+  },
+  "TEF": {
+    "topic": "Texas Enterprise Fund",
+    "headline": "",
+    "byline": "<p><a href=\"http://www.texastribune.org/about/staff/aman-batheja/\">Aman Batheja</a></p>\n",
+    "icon": "fa-money",
+    "slug": "texas-enterprise-fund"
   }
 }
