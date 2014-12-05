@@ -1,3 +1,27 @@
+<!-- Meta Share data -->
+{% macro meta_data(sheet) %}
+
+  <title> {{ sheet.topic }} | Perry Legacy </title>
+<!--   Open Graph -->
+  <meta property="og:site_name" content="The Texas Tribune">
+  <meta property="og:description" content="{{ sheet.facebook_text }}">
+  <meta property="og:title" content="{{ sheet.headline }}">
+  <meta property="og:url" content="http://apps.texastribune.org/perry-legacy/{{ sheet.slug }}">
+  <meta property="og:image" content="{{ sheet.facebook_art }}">
+
+<!-- Twitter settings -->
+  <meta name="twitter:card" value="summary_large_image">
+  <meta name="twitter:site" value="@TexasTribune">
+  <meta name="twitter:creator" content="@newsapps">
+  <meta name="twitter:title" content="{{ sheet.headline }}">
+  <meta name="twitter:description" content="{{ sheet.tweet_text }}">
+  <meta name="twitter:url" content="http://apps.texastribune.org/perry-legacy/{{ sheet.slug }}">
+  <meta name="twitter:image" content="{{ sheet.facebook_art }}">
+  <meta name="twitter:image:width" content="560">
+  <meta name="twitter:image:height" content="295">
+{% endmacro %}
+
+
 <!-- HEADLINE -->
 
 {% macro headline(sheet) %}
@@ -12,14 +36,14 @@
 
 {% macro shareline(sheet) %}
   <div class="row share-row">
-    <a target="_blank" title="share on Twitter" href="http://twitter.com/share?text=Check out the Texas Hospitals Explorer and learn more about quality of care at Texas' 377 hospitals&url=http://hospitals.texastribune.org/&hashtags=txhospitals">
+    <a href="https://twitter.com/intent/tweet?text={{ sheet.tweet_text | urlencode }} {{ sheet.share_url | urlencode }}&via=texastribune" title="share on Twitter" class="social-share" target="_blank">
       <div class="share-cell first-share">
         <i class="fa fa-twitter"></i> Tweet
       </div>
     </a>
-    <a target="_blank" title="share on Facebook" href="http://www.facebook.com/sharer.php?u=http://hospitals.texastribune.org/">
+    <a href="https://www.facebook.com/dialog/feed?app_id=154122474650943&display=popup&name={{ sheet.headline | urlencode }}&link=http%3A%2F%2Fapps.texastribune.org%2Fperry-legacy%2F{{ sheet.slug }}%2F&redirect_uri=http://apps.texastribune.org/perry-legacy/{{ sheet.slug }}" title="share on Facebook" class="social-share" target="_blank">
       <div class="share-cell">
-        <i class="fa fa-facebook"></i> Recommend
+        <i class="fa fa-facebook"></i> Share
       </div>
     </a>
   </div>
