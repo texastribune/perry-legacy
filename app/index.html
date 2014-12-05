@@ -1,4 +1,7 @@
 {% extends 'app/templates/base.html' %}
+{% block meta_ref %}
+  {{ macro.meta_data(data.OVERVIEW) }}
+{% endblock %}
 {% import 'app/templates/macro.html' as macro %}
 
 {% block content %}
