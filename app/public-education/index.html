@@ -1,6 +1,6 @@
 {% extends 'app/templates/base-sub.html' %}
 {% block meta_ref %}
-  {{ macro.meta_data(data.TRANSPO) }}
+  {{ macro.meta_data(data.PUBLIC_EDU) }}
 {% endblock %}
 {% import 'app/templates/macro.html' as macro %}
 
@@ -9,20 +9,20 @@
 <div class="main">
 
   <div class="banner small-banner">
-    <div class="banner-image transportation"></div>
+    <div class="banner-image public-education"></div>
     <header class="grand-header content-block">
       <h1><a href="//s3.amazonaws.com/apps.texastribune.org/perry-legacy/">{{ data.META.project_title }}</a></h1>
-      <h1 class="subtitle">On {{ data.TRANSPO.topic }}</h1>
+      <h1 class="subtitle">On {{ data.PUBLIC_EDU.topic }}</h1>
     </header>
   </div>
 
   <div class="container">
     <div class="prose">
-      {{ macro.headline(data.TRANSPO) }}
-      {{ data.TRANSPO.text_1 }}
+      {{ macro.headline(data.PUBLIC_EDU) }}
+      {{ data.PUBLIC_EDU.text_1 }}
       <div class="media">
-        <img src="{{ data.TRANSPO.img_1 }}">
-        <p class="caption">{{ data.TRANSPO.img_1_caption }} Photo by {{ data.TRANSPO.img_1_credit }}</p>
+        <img src="{{ data.PUBLIC_EDU.img_1 }}">
+        <p class="caption">{{ data.PUBLIC_EDU.img_1_caption }} Photo by {{ data.PUBLIC_EDU.img_1_credit }}</p>
       </div>
       {% include 'app/templates/includes/box_ad.html' %}
       <p>Aenean viverra tellus eleifend odio vehicula vehicula. Nulla sit amet diam facilisis, maximus arcu eget, eleifend purus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec eget tortor ac augue commodo mattis. Ut ultrices, magna sagittis suscipit sollicitudin, lectus metus vulputate elit, in consectetur risus nibh a lectus. Vestibulum aliquet tortor metus, eu dignissim felis congue vulputate. Ut lacinia est a elit varius, vel dictum massa consequat. Donec at euismod diam. Fusce vitae iaculis odio. Integer blandit leo ut venenatis lacinia. Morbi ac sagittis dui. Etiam ex nibh, lacinia sit amet ex a, accumsan molestie nisi. Aenean ac felis luctus, tincidunt dui eget, venenatis erat.</p>
@@ -31,7 +31,7 @@
         <h2>“You know what’s awesome? Cats. Cats are awesome.”</h2>
         <p class="source">— Becca Aaronson, cat enthusiast</p>
       </div>
-      {{ data.TRANSPO.text_1 }}
+      {{ data.PUBLIC_EDU.text_1 }}
 
       <div class="sub-navigation">
         <h3>Keep reading:</h3>
