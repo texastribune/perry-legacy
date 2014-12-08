@@ -27,14 +27,7 @@
 {% macro headline(sheet) %}
 <header>
   <h1>{{ sheet.headline }}</h1>
-  <div class="byline">By {{ sheet.byline }} | July 0, 2084</div>
-</header>
-{% endmacro %}
-
-
-<!-- SHARELINE -->
-
-{% macro shareline(sheet) %}
+  <div class="byline">By {{ sheet.byline }} | Dec. 28, 2014</div>
   <div class="row share-row">
     <a href="https://twitter.com/intent/tweet?text={{ sheet.tweet_text | urlencode }} {{ sheet.share_url | urlencode }}&via=texastribune" title="share on Twitter" class="social-share" target="_blank">
       <div class="share-cell first-share">
@@ -47,4 +40,5 @@
       </div>
     </a>
   </div>
+</header>
 {% endmacro %}

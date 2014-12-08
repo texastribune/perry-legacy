@@ -2,12 +2,15 @@ body {
   background-color: $white;
 }
 
-.banner .grand-header {
-  display: block;
-  position: absolute;
-  bottom: 5%;
-  width: 100%;
+.banner {
+  margin: 0;
 
+  .grand-header {
+    display: block;
+    position: absolute;
+    bottom: 5%;
+    width: 100%;
+  }
 }
 
 .banner-image {
@@ -100,4 +103,8 @@ body {
   ul li:last-child {
     margin-bottom: 2em;
   }
+}
+
+.share-cell i {
+  margin-right: .5em;
 }
