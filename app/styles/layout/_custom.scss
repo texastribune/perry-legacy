@@ -14,7 +14,6 @@ body {
 }
 
 .banner-image {
-  background-image: url("//s3.amazonaws.com/static.texastribune.org/media/images/2014/06/05/XPerry351CMS.jpg");
   background-position: center center;
   background-size: cover;
   bottom: 0;
@@ -22,6 +21,19 @@ body {
   position: absolute;
   right: 0;
   top: 0;
+
+  &.overview {
+    background-image: url("//s3.amazonaws.com/static.texastribune.org/media/images/2014/06/05/XPerry351CMS.jpg");
+  }
+
+  &.transportation {
+    background-image: url("../../images/Perry-Legacy-018a.JPG");
+  }
+
+  &.health-care {
+    background-image: url("../../images/Perry-Legacy-002.JPG");
+
+  }
 }
 
 .block-text {
