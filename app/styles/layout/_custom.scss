@@ -6,10 +6,10 @@ body {
   margin: 0;
 
   .grand-header {
-    background-color: transparentize($masthead-black, .7);
+    background-color: transparentize($masthead-black, .6);
     display: block;
     position: absolute;
-    bottom: 0;
+    bottom: 0%;
     width: 100%;
 
     &.overview {
