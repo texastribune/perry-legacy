@@ -2,14 +2,22 @@ body {
   background-color: $white;
 }
 
+.anchor {
+  display: block;
+  height: 3.5em; /*same height as header*/
+  margin-top: -3.5em; /*same height as header*/
+  visibility: hidden;
+}
+
 .banner {
   margin: 0;
 
   .grand-header {
     background-color: transparentize($masthead-black, .6);
-    display: block;
-    position: absolute;
     bottom: 0%;
+    display: block;
+    padding-top: .5em;
+    position: absolute;
     width: 100%;
 
     &.overview {
