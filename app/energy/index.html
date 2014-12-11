@@ -21,17 +21,17 @@
       {{ macro.headline(data.ENERGY) }}
       {{ data.ENERGY.text_1 }}
       <div class="media">
-        <img src="{{ data.ENERGY.img_1 }}">
+        <img src="../../../images/story_photos/Perry-Legacy-104.jpg">
         <p class="caption">{{ data.ENERGY.img_1_caption }} Photo by {{ data.ENERGY.img_1_credit }}</p>
       </div>
-      {% include 'app/templates/includes/box_ad.html' %}
-      <p>Aenean viverra tellus eleifend odio vehicula vehicula. Nulla sit amet diam facilisis, maximus arcu eget, eleifend purus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec eget tortor ac augue commodo mattis. Ut ultrices, magna sagittis suscipit sollicitudin, lectus metus vulputate elit, in consectetur risus nibh a lectus. Vestibulum aliquet tortor metus, eu dignissim felis congue vulputate. Ut lacinia est a elit varius, vel dictum massa consequat. Donec at euismod diam. Fusce vitae iaculis odio. Integer blandit leo ut venenatis lacinia. Morbi ac sagittis dui. Etiam ex nibh, lacinia sit amet ex a, accumsan molestie nisi. Aenean ac felis luctus, tincidunt dui eget, venenatis erat.</p>
-
+      {{ data.ENERGY.text_2 }}
       <div class="block-text">
-        <h2>“You know what’s awesome? Cats. Cats are awesome.”</h2>
-        <p class="source">— Becca Aaronson, cat enthusiast</p>
+        <h2>&ldquo;That we were able to build thousands of miles of high-capacity transmission from West Texas to the Panhandle without landowners marching on the capital with pitchforks, it’s pretty remarkable.&rdquo;</h2>
+        <p class="source">&mdash; Barry Smitherman, Railroad Commissioner</p>
       </div>
-      {{ data.ENERGY.text_1 }}
+      {{ data.ENERGY.text_3 }}
+      {% include 'app/templates/includes/box_ad.html' %}
+      {{ data.ENERGY.text_4 }}
 
       <div class="sub-navigation">
         <h3>Keep reading:</h3>
