@@ -169,7 +169,8 @@ body {
   margin-right: .5em;
 }
 
-.nav-block {
+.nav-block,
+.small-quote {
   @include media($prose-bp-medium) {
     @include span-columns(4 of 8);
   }
