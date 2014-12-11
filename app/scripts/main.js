@@ -1,25 +1,13 @@
+'use strict';
+
 // Set element height based on height of reference element
 
 function setHeight() {
-  var fullHeight = $(window).innerHeight();
   var shortHeight = $(window).height() * 0.8;
 
   $('.landing-banner').css('height', shortHeight);
   $('.small-banner').css('height', shortHeight);
 }
-
-$(document).ready(function() {
-  setHeight();
-});
-
-// Reset heights/positions on window resize
-$(window).resize(function() {
-  setHeight();
-});
-
-$(window).on( 'orientationchange', function() {
-  setHeight();
-});
 
 (function () {
   'use strict';
@@ -56,3 +44,17 @@ $(window).on( 'orientationchange', function() {
     }
   });
 })();
+
+$(document).ready(function() {
+  setHeight();
+  $('.main').fitVids();
+});
+
+// Reset heights/positions on window resize
+$(window).resize(function() {
+  setHeight();
+});
+
+$(window).on( 'orientationchange', function() {
+  setHeight();
+});
