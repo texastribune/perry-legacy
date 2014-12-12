@@ -21,7 +21,7 @@
       {{ macro.headline(data.HEALTH) }}
      <!-- Intro Text -->
       {{ data.HEALTH.text_intro }}
-      <nav class="nav-block block-text">
+      <nav class="small-block block-text">
         <header>
           <h3>Jump to a section</h3>
         </header>
@@ -44,7 +44,7 @@
       {{ data.HEALTH.text_1 }}
 
       <div class="media">
-        <img src="../../images/story_photos/Perry-Legacy-105.jpg">
+        <img src="../../images/story_photos/Perry-Legacy-101.jpg">
         <p class="caption">{{ data.HEALTH.img_1_caption }} Photo by {{ data.HEALTH.img_1_credit }}</p>
       </div>
 
@@ -56,9 +56,9 @@
         <h3>{{ data.HEALTH.text_2_header }}</h2>
       </header>
       {{ data.HEALTH.text_2 }}
-      <div class="media">
-        <img src="../../images/story_photos/Perry-Legacy-110.jpg">
-        <p class="caption">{{ data.HEALTH.img_2_caption }} Photo by {{ data.HEALTH.img_2_credit }}</p>
+      <div class="block-text media">
+        <h2>&ldquo;Folks may not have liked the end result, but the margins tax, when you look how it came about, it was really Perry’s finest hour,&rdquo;</h2>
+        <p class="source">&mdash; Dale Craymer, president of the Texas Taxpayers and Research Association</p>
       </div>
       {{ data.HEALTH.text_2b }}
 
@@ -68,10 +68,9 @@
         <h3>{{ data.HEALTH.text_3_header }}</h3>
       </header>
       {{ data.HEALTH.text_3 }}
-
-      <div class="block-text media">
-        <h2>&ldquo;Folks may not have liked the end result, but the margins tax, when you look how it came about, it was really Perry’s finest hour,&rdquo;</h2>
-        <p class="source">&mdash; Dale Craymer, president of the Texas Taxpayers and Research Association</p>
+      <div class="media">
+        <img src="../../images/story_photos/Perry-Legacy-102.jpg">
+        <p class="caption">{{ data.HEALTH.img_2_caption }} Photo by {{ data.HEALTH.img_2_credit }}</p>
       </div>
       {{ data.HEALTH.text_3b }}
 
@@ -81,11 +80,9 @@
         <h3>{{ data.HEALTH.text_4_header }}</h3>
       </header>
       {{ data.HEALTH.text_4 }}
-      <div class="media">
-        <iframe width="560" height="315" src="//www.youtube.com/embed/g5qU7p7yOY8" frameborder="0" allowfullscreen></iframe>
-      </div>
-
+      {% include 'app/templates/includes/box_ad.html' %}
       {{ data.HEALTH.text_4b }}
+
     <!-- CPRIT -->
       <span class="anchor" id="section-5"></span>
       <header>
@@ -93,7 +90,7 @@
       </header>
       {{ data.HEALTH.text_5 }}
       <div class="media">
-        <img src="../../images/story_photos/Perry-Legacy-096.jpg">
+        <img src="../../images/Perry-Legacy-001.jpg">
         <p class="caption">{{ data.HEALTH.img_3_caption }} Photo by {{ data.HEALTH.img_3_credit }}</p>
       </div>
       {{ data.HEALTH.text_5b }}
