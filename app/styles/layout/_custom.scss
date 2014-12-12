@@ -84,9 +84,6 @@ body {
   }
 }
 
-.block-text {
-  margin-bottom: 1em;
-}
 
 .byline {
   display: inline-block;
@@ -145,10 +142,6 @@ body {
   }
 }
 
-.media {
-  margin-bottom: 1em;
-}
-
 .prose {
   @include media($prose-bp-large) {
     @include span-columns(8);
@@ -167,14 +160,4 @@ body {
 
 .share-cell i {
   margin-right: .5em;
-}
-
-.nav-block,
-.small-quote {
-  @include media($prose-bp-medium) {
-    @include span-columns(4 of 8);
-  }
-  @include media($prose-bp-large) {
-    @include span-columns(3 of 8);
-  }
 }
