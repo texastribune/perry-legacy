@@ -21,16 +21,18 @@
       {{ macro.headline(data.HEALTH) }}
      <!-- Intro Text -->
       {{ data.HEALTH.text_intro }}
-      <nav class="small-block block-text">
+      <nav class="med-block block-text">
         <header>
-          <h3>Jump to a section</h3>
+          <h3>At a Glance: Health Outcomes</h3>
         </header>
         <ul>
-          <li><a href="#section-1">{{ data.HEALTH.text_1_header }}</a></li>
-          <li><a href="#section-2">{{ data.HEALTH.text_2_header }}</a></li>
-          <li><a href="#section-3">{{ data.HEALTH.text_3_header }}</a></li>
-          <li><a href="#section-4">{{ data.HEALTH.text_4_header }}</a></li>
-          <li><a href="#section-5">{{ data.HEALTH.text_5_header }}</a></li>
+          <li>Texas has the <a href="https://www.texastribune.org/2014/09/16/texas-tops-census-list-highest-uninsured-rate/">highest uninsured rate</a> in the country.</li>
+          <li>Texas has the <a href="http://thenationalcampaign.org/data/compare/1701">fifth-highest teen birth</a> rate per 1,000 girls ages 15 to 19 (2012).</li>
+          <li>Texas has the <a href="http://kff.org/other/state-indicator/number-of-deaths-due-to-diseases-of-the-heart-per-100000-population/">21st-highest rate of deaths</a> caused by heart disease per 100,000 residents, and ranks <a href="http://kff.org/other/state-indicator/diabetes-death-rate-per-100000/">22nd in the number of deaths</a> per 100,000 residents due to diabetes (2010).</li>
+<!--           <li>Texas has the <a href="http://kff.org/other/state-indicator/adults-with-diabetes-by-age/">second-highest number</a> of adults diagnosed with diabetes (2010).</li> -->
+<!--           <li>Texas has the <a href="http://kff.org/other/state-indicator/life-expectancy/">27th-highest life expectancy</a> at birth.</li> -->
+<!--           <li>Texas has the <a href="http://kff.org/medicare/state-indicator/total-medicare-beneficiaries/">third-highest number</a> of Medicare beneficiaries.</li> -->
+          <li>Texas has the <a href="http://kff.org/medicaid/state-indicator/medicaid-enrollment-as-a-of-pop/">third-highest</a> total Medicaid enrollment, but only <a href="http://kff.org/medicaid/state-indicator/total-medicaid-enrollment/">19 percent</a> of the state is a beneficiary.</li>
         </ul>
       </nav>
       {{ data.HEALTH.text_introb }}
@@ -42,13 +44,11 @@
       </header>
 
       {{ data.HEALTH.text_1 }}
-
+      {{ data.HEALTH.text_1b }}
       <div class="media">
         <img src="../../images/story_photos/Perry-Legacy-101.jpg">
         <p class="caption">{{ data.HEALTH.img_1_caption }} Photo by {{ data.HEALTH.img_1_credit }}</p>
       </div>
-
-      {{ data.HEALTH.text_1b }}
 
     <!-- Tort Reform -->
       <span class="anchor" id="section-2"></span>
@@ -56,10 +56,6 @@
         <h3>{{ data.HEALTH.text_2_header }}</h2>
       </header>
       {{ data.HEALTH.text_2 }}
-      <div class="block-text media">
-        <h2>&ldquo;Folks may not have liked the end result, but the margins tax, when you look how it came about, it was really Perry’s finest hour,&rdquo;</h2>
-        <p class="source">&mdash; Dale Craymer, president of the Texas Taxpayers and Research Association</p>
-      </div>
       {{ data.HEALTH.text_2b }}
 
     <!-- Women's Health -->
