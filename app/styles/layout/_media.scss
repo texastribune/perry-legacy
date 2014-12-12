@@ -1,0 +1,13 @@
+.block-text,
+.media {
+  margin-bottom: 1em;
+}
+
+.small-block {
+  @include media($prose-bp-medium) {
+    @include span-columns(4 of 8);
+  }
+  @include media($prose-bp-large) {
+    @include span-columns(3 of 8);
+  }
+}
