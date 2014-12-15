@@ -47,7 +47,7 @@
         {% for key, value in data %}
           {% if value.topic %}
           <li class="story-link">
-            <a href=""><i class="fa {{ value.icon }}"></i>{{ value.topic }}</a>
+            <a href="http://apps.texastribune.org/perry-legacy/{{ value.slug }}"><i class="fa {{ value.icon }}"></i>{{ value.topic }}</a>
           </li>
           {% endif %}
         {% endfor %}
