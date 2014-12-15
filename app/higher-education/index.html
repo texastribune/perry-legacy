@@ -19,22 +19,56 @@
   <div class="container">
     <div class="prose">
       {{ macro.headline(data.HIGHER_EDU) }}
-      {{ data.HIGHER_EDU.text_1 }}
+
+      {{ data.HIGHER_EDU.text_intro }}
       <div class="media">
-        <img src="../../images/story_photos/Perry-Legacy-092.jpg">
+        <img src="http://static.texastribune.org.s3.amazonaws.com/media/perry-legacy/Perry-Legacy-092.JPG">
         <p class="caption">{{ data.HIGHER_EDU.img_1_caption }} Photo by {{ data.HIGHER_EDU.img_1_credit }}</p>
       </div>
 
-      {{ data.HIGHER_EDU.text_2 }}
+      {{ data.HIGHER_EDU.text_introb }}
 
+    <!-- Tuition Deregulation -->
+      <span class="anchor" id="section-1"></span>
+      <header>
+        <h3>{{ data.HIGHER_EDU.text_1_header }}</h3>
+      </header>
+
+      {{ data.HIGHER_EDU.text_1 }}
       <div class="block-text">
-        <h2>&ldquo;Do these incentive programs need to go on for perpetuity? I think it’s a good conversation to have.&rdquo;</h2>
-        <p class="source">&mdash; Gov. Rick Perry in September</p>
+        <h2>&ldquo;We must do everything we can to continue making higher education an achievable dream for all Texans.&rdquo;</h2>
+        <p class="source">&mdash; Gov. Rick Perry in his 2013 State of the State address</p>
       </div>
+      {{ data.HIGHER_EDU.text_1b }}
 
+    <!-- The Seven Solutions -->
+      <span class="anchor" id="section-2"></span>
+      <header>
+        <h3>{{ data.HIGHER_EDU.text_2_header }}</h2>
+      </header>
+      {{ data.HIGHER_EDU.text_2 }}
+      {{ data.HIGHER_EDU.text_2b }}
+
+    <!-- UT-Austin Tensions -->
+      <span class="anchor" id="section-3"></span>
+      <header>
+        <h3>{{ data.HIGHER_EDU.text_3_header }}</h3>
+      </header>
       {{ data.HIGHER_EDU.text_3 }}
-      {% include 'app/templates/includes/box_ad.html' %}
+      <div class="media">
+        <img src="http://static.texastribune.org.s3.amazonaws.com/media/perry-legacy/Perry-Legacy-117.JPG">
+        <p class="caption">{{ data.HIGHER_EDU.img_2_caption }} Photo by {{ data.HIGHER_EDU.img_2_credit }}</p>
+      </div>
+      {{ data.HIGHER_EDU.text_3b }}
+
+    <!-- In-State Tuition -->
+      <span class="anchor" id="section-4"></span>
+      <header>
+        <h3>{{ data.HIGHER_EDU.text_4_header }}</h3>
+      </header>
       {{ data.HIGHER_EDU.text_4 }}
+      {% include 'app/templates/includes/box_ad.html' %}
+      {{ data.HIGHER_EDU.text_4b }}
 
       <div class="sub-navigation">
         <h3>Keep reading:</h3>

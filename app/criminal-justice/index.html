@@ -21,7 +21,7 @@
       {{ macro.headline(data.JUSTICE) }}
       {{ data.JUSTICE.text_1 }}
       <div class="media">
-        <img src="../../images/story_photos/Perry-Legacy-114.jpg">
+        <img src="http://static.texastribune.org.s3.amazonaws.com/media/perry-legacy/Perry-Legacy-114.JPG">
         <p class="caption">{{ data.JUSTICE.img_1_caption }} Photo by {{ data.JUSTICE.img_1_credit }}</p>
       </div>
 
@@ -34,7 +34,7 @@
 
       {{ data.JUSTICE.text_3 }}
       <div class="media">
-        <img src="../../images/story_photos/Perry-Legacy-113.jpg">
+        <img src="http://static.texastribune.org.s3.amazonaws.com/media/perry-legacy/Perry-Legacy-113.JPG">
         <p class="caption">{{ data.JUSTICE.img_2_caption }} Photo by {{ data.JUSTICE.img_2_credit }}</p>
       </div>
       {{ data.JUSTICE.text_4 }}
@@ -48,7 +48,7 @@
         {% for key, value in data %}
           {% if value.topic %}
           <li class="story-link">
-            <a href=""><i class="fa {{ value.icon }}"></i>{{ value.topic }}</a>
+            <a href="http://apps.texastribune.org/perry-legacy/{{ value.slug }}"><i class="fa {{ value.icon }}"></i>{{ value.topic }}</a>
           </li>
           {% endif %}
         {% endfor %}
