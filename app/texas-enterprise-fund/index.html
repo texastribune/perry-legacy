@@ -8,13 +8,7 @@
 
 <div class="main">
 
-  <div class="banner small-banner">
-    <div class="banner-image texas-enterprise-fund"></div>
-    <header class="grand-header content-block">
-      <h1><a href="//s3.amazonaws.com/apps.texastribune.org/perry-legacy/">{{ data.META.project_title }}</a></h1>
-      <h1 class="subtitle">{{ data.TEF.topic }}</h1>
-    </header>
-  </div>
+  {{ macro.header(data.TEF) }}
 
   <div class="container">
     <div class="prose">

@@ -21,6 +21,15 @@
     <meta name="twitter:image:height" content="295">
   {% endmacro %}
 
+<!-- Project Header -->
+{% macro header(sheet) %}
+  <div class="banner small-banner">
+    <div class="banner-image {{ sheet.slug }}"></div>
+    <header class="grand-header content-block">
+      <h1><a href="//s3.amazonaws.com/apps.texastribune.org/perry-legacy/">The Perry Legacy</a>: {{ sheet.topic }}</h1>
+    </header>
+  </div>
+{% endmacro %}
 
 <!-- HEADLINE -->
 
