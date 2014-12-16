@@ -29,7 +29,7 @@
       {{ data.IMMIGRATION.text_3 }}
       <div class="media small-block">
         <img src="//s3.amazonaws.com/static.texastribune.org/media/perry-legacy/Perry-Legacy-095.JPG">
-        <p class="caption">{{ data.IMMIGRATION.img_1_caption }} Photo by {{ data.IMMIGRATION.img_1_credit }}</p>
+        <p class="caption">{{ data.IMMIGRATION.img_2_caption }} Photo by {{ data.IMMIGRATION.img_2_credit }}</p>
       </div>
       {{ data.IMMIGRATION.text_4 }}
       {% include 'app/templates/includes/box_ad.html' %}
@@ -37,7 +37,7 @@
 
 
       <div class="sub-navigation">
-        <h3>Keep reading:</h3>
+        <h3>More stories on Rick Perry's Legacy:</h3>
         <ul>
         {% for key, value in data %}
           {% if value.topic %}

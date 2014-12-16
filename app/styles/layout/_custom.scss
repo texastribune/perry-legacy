@@ -11,6 +11,7 @@ body {
 
 .banner {
   margin: 0;
+  transition: height .4s ease;
 
   .grand-header {
     background-color: transparentize($masthead-black, .6);
