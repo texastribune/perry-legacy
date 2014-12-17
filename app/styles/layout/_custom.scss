@@ -28,7 +28,6 @@ body {
 }
 
 .banner-image {
-  background-position: center center;
   background-size: cover;
   bottom: 0;
   left: 0;
@@ -37,50 +36,69 @@ body {
   top: 0;
 
   &.overview {
-    background-image: url("//s3.amazonaws.com/static.texastribune.org/media/images/2014/06/05/XPerry351CMS.JPG");
+    background-image: url("http://s3.amazonaws.com/static.texastribune.org/media/images/2014/06/05/XPerry351CMS.jpg");
+    background-position: 34% center;
+
+    // @include media($medium) {
+    //   background-position: center center;
+    // }
+
+    @include media($large) {
+      background-position: center center;
+    }
+
   }
 
   &.transportation {
     background-image: url("//s3.amazonaws.com/static.texastribune.org/media/perry-legacy/lead-art/Perry-Legacy-047.JPG");
+    background-position: center center;
   }
 
   &.health-care {
     background-image: url("//s3.amazonaws.com/static.texastribune.org/media/perry-legacy/lead-art/Perry-Legacy-003.JPG");
+    background-position: center center;
 
   }
 
   &.higher-education {
     background-image: url("//s3.amazonaws.com/static.texastribune.org/media/perry-legacy/lead-art/Perry-Legacy-020.JPG");
+    background-position: center center;
 
   }
 
   &.public-education {
     background-image: url("//s3.amazonaws.com/static.texastribune.org/media/perry-legacy/lead-art/Perry-Legacy-053.JPG");
+    background-position: center center;
 
   }
 
   &.energy {
     background-image: url("//s3.amazonaws.com/static.texastribune.org/media/perry-legacy/lead-art/Perry-Legacy-014.JPG");
+    background-position: center center;
 
   }
 
   &.environment {
     background-image: url("//s3.amazonaws.com/static.texastribune.org/media/perry-legacy/lead-art/Perry-Legacy-028.JPG");
+    background-position: center center;
 
   }
 
   &.immigration {
     background-image: url("//s3.amazonaws.com/static.texastribune.org/media/perry-legacy/lead-art/Perry-Legacy-011.JPG");
+    background-position: center center;
 
   }
 
   &.criminal-justice {
     background-image: url("//s3.amazonaws.com/static.texastribune.org/media/perry-legacy/lead-art/Perry-Legacy-031.JPG");
+    background-position: center center;
 
   }
 
   &.texas-enterprise-fund {
     background-image: url("//s3.amazonaws.com/static.texastribune.org/media/perry-legacy/lead-art/Perry-Legacy-045.JPG");
+    background-position: center center;
 
   }
 }
