@@ -34,7 +34,7 @@ module.exports = function (grunt) {
         files: [{
           expand: true,
           cwd: '.tmp/styles/',
-          src: '{,*/}*.css',
+          src: '**/*.css',
           dest: '.tmp/styles/'
         }]
       }
@@ -101,7 +101,7 @@ module.exports = function (grunt) {
         dot: true,
         cwd: '<%= config.app %>/styles',
         dest: '.tmp/styles/',
-        src: '{,*/}*.css'
+        src: '**/*.css'
       }
     },
 
@@ -203,10 +203,10 @@ module.exports = function (grunt) {
       dist: {
         files: {
           src: [
-            '<%= config.dist %>/scripts/{,*/}*.js',
-            '<%= config.dist %>/styles/{,*/}*.css',
-            '<%= config.dist %>/images/{,*/}*.*',
-            '<%= config.dist %>/styles/fonts/{,*/}*.*',
+            '<%= config.dist %>/scripts/**/*.js',
+            '<%= config.dist %>/styles/**/*.css',
+            '<%= config.dist %>/images/**/*.*',
+            '<%= config.dist %>/styles/fonts/**/*gru',
             '<%= config.dist %>/*.{ico,png}'
           ]
         }
@@ -224,8 +224,8 @@ module.exports = function (grunt) {
       options: {
         assetsDirs: ['<%= config.dist %>', '<%= config.dist %>/images']
       },
-      html: ['<%= config.dist %>/{,*/}*.html'],
-      css: ['<%= config.dist %>/styles/{,*/}*.css']
+      html: ['<%= config.dist %>/**/*.html'],
+      css: ['<%= config.dist %>/styles/**/*.css']
     },
 
     watch: {
@@ -267,7 +267,7 @@ module.exports = function (grunt) {
 
     wiredep: {
       app: {
-        src: ['.tmp/{,*/}*.html']
+        src: ['.tmp/**/*.html']
       }
     }
   });

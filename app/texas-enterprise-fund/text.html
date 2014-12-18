@@ -1,11 +1,11 @@
-{% extends 'app/templates/base-story-text.html' %}
+{% extends 'app/templates/base-sub.html' %}
 {% block meta_ref %}
-  {{ macro.meta_data(data.TRANSPO) }}
+  {{ macro.meta_data(data.TEF) }}
 {% endblock %}
 {% import 'app/templates/macro.html' as macro %}
 
 {% block content %}
 
-{{ macro.rawtext(data.TRANSPO) }}
+{{ macro.rawtext(data.TEF) }}
 
 {% endblock %}

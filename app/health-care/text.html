@@ -1,11 +1,11 @@
-{% extends 'app/templates/base-story-text.html' %}
+{% extends 'app/templates/base-sub.html' %}
 {% block meta_ref %}
-  {{ macro.meta_data(data.ENERGY) }}
+  {{ macro.meta_data(data.HEALTH) }}
 {% endblock %}
 {% import 'app/templates/macro.html' as macro %}
 
 {% block content %}
 
-{{ macro.rawtext(data.ENERGY) }}
+{{ macro.rawtext(data.HEALTH) }}
 
 {% endblock %}
