@@ -17,12 +17,37 @@ body {
     background-color: transparentize($masthead-black, .6);
     bottom: 0%;
     display: block;
-    padding-top: .5em;
+    padding: 1em;
     position: absolute;
     width: 100%;
 
     &.overview {
       bottom: 5%;
+    }
+
+    h1 {
+      font-size: 2em;
+      margin-bottom: .25em;
+
+      @include media($prose-bp-medium) {
+        font-size: 2.5em;
+      }
+
+      @include media($prose-bp-large) {
+        font-size: 3.5em;
+      }
+
+      // span {
+      //   text-transform: uppercase;
+      //   font-size: .7em;
+      //   letter-spacing: .1em;
+      // }
+    }
+
+    p {
+      font-size: 1em;
+      margin-bottom: 1.5em;
+      text-shadow: none;
     }
   }
 }
@@ -117,25 +142,6 @@ body {
   margin-top: 2em;
 }
 
-.grand-header {
-  h1.subtitle {
-    @include media(new-breakpoint(min-width 480px)) {
-      font-family: $base-sans-serif;
-      font-size: 2.5em;
-      font-weight: 400;
-    }
-  }
-
-  h1.subtitle,
-  p {
-    display: none;
-
-    @include media(new-breakpoint(min-width 480px)) {
-      display: block;
-    }
-  }
-}
-
 .masthead .branding {
   text-align: right;
   padding-right: 1em;
@@ -174,6 +180,24 @@ body {
 
   ul li:last-child {
     margin-bottom: 2em;
+  }
+
+  h1 {
+    font-size: 1.5em;
+    margin: 1.25em 0 .6em;
+
+    @include media($prose-bp-large) {
+      font-size: 2em;
+    }
+
+    @include media($prose-bp-medium) {
+      font-size: 2em;
+    }
+
+  }
+
+  .byline {
+    margin-bottom: 0;
   }
 }
 

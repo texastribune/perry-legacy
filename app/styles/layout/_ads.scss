@@ -1,4 +1,17 @@
+.ad-container {
+  margin: 1em auto;
+}
+
 .box-ad {
-  float: right;
-  margin: .5em 0 .5em 1em;
+  float: none;
+
+  @include media($prose-bp-medium) {
+    float: right;
+    margin-left: 1em;
+  }
+
+  @include media($prose-bp-large) {
+    float: right;
+    margin-left: 1em;
+  }
 }
