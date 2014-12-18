@@ -7,7 +7,7 @@
     <meta property="og:description" content="{{ sheet.facebook_text }}">
     <meta property="og:title" content="{{ sheet.headline }}">
     <meta property="og:url" content="http://apps.texastribune.org/perry-legacy/{{ sheet.slug }}">
-    <meta property="og:image" content="//s3.amazonaws.com/static.texastribune.org/media/{{ sheet.facebook_art }}">
+    <meta property="og:image" content="//s3.amazonaws.com/static.texastribune.org/media/perry-legacy/lead-art/{{ sheet.facebook_art }}">
 
   <!-- Twitter settings -->
     <meta name="twitter:card" value="summary_large_image">
@@ -16,7 +16,7 @@
     <meta name="twitter:title" content="{{ sheet.headline }}">
     <meta name="twitter:description" content="{{ sheet.tweet_text }}">
     <meta name="twitter:url" content="http://apps.texastribune.org/perry-legacy/{{ sheet.slug }}">
-    <meta name="twitter:image" content="//s3.amazonaws.com/static.texastribune.org/media/{{ sheet.facebook_art }}">
+    <meta name="twitter:image" content="//s3.amazonaws.com/static.texastribune.org/media/perry-legacy/lead-art/{{ sheet.facebook_art }}">
   {% endmacro %}
 
 <!-- Project Header -->
@@ -42,7 +42,7 @@
           <i class="fa fa-twitter"></i> Tweet
         </div>
       </a>
-      <a href="https://www.facebook.com/dialog/feed?app_id=154122474650943&display=popup&name={{ sheet.headline | urlencode }}&link=http%3A%2F%2Fapps.texastribune.org%2Fperry-legacy%2F{{ sheet.slug }}%2F&redirect_uri=http://apps.texastribune.org/perry-legacy/{{ sheet.slug }}" title="share on Facebook" class="social-share" target="_blank">
+      <a href="https://www.facebook.com/dialog/feed?app_id=154122474650943&display=popup&name={{ sheet.headline | urlencode }}&link=http%3A%2F%2Fapps.texastribune.org%2Fperry-legacy%2F{{ sheet.slug }}%2F&redirect_uri=http%3A%2F%2Fapps.texastribune.org/perry-legacy/{{ sheet.slug }}&description={{ sheet.facebook_text }}&image=%2F%2Fs3.amazonaws.com%2Fstatic.texastribune.org%2Fmedia%2Fperry-legacy%2Flead-art%2F{{ sheet.facebook_art | urlencode }}" title="share on Facebook" class="social-share" target="_blank">
         <div class="share-cell">
           <i class="fa fa-facebook"></i> Share
         </div>

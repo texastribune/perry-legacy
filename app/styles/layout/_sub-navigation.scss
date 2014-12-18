@@ -33,4 +33,13 @@ $sub-nav-bp: new-breakpoint(min-width 500px);
 
   }
 
+  &:after {
+   visibility: hidden;
+   display: block;
+   font-size: 0;
+   content: " ";
+   clear: both;
+   height: 0;
+ }
+
 }

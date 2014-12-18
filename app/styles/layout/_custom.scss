@@ -218,6 +218,15 @@ body {
   &.raw-text {
     margin-top: 2em;
   }
+
+  .info {
+    border-top: 1px solid $tribune-yellow;
+    padding: 0.94em 0;
+  }
+
+  .about-desc {
+    color: $text-gray;
+  }
 }
 
 .share-cell i {
