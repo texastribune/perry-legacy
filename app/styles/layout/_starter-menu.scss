@@ -68,10 +68,10 @@ body {
 }
 
 .menu-container {
-  transition: margin-left 1s ease;
+  transition: margin-right 1s ease;
 
   &.open {
-    margin-left: 0;
+    margin-right: 0;
   }
 }
 

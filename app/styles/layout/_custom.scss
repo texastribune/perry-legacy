@@ -80,9 +80,12 @@ body {
   }
 
   &.health-care {
-    background-image: url("//s3.amazonaws.com/static.texastribune.org/media/perry-legacy/lead-art/Perry-Legacy-003.JPG");
-    background-position: center center;
+    background-image: url("//s3.amazonaws.com/static.texastribune.org/media/perry-legacy/lead-art/Perry-Legacy-004-blur.jpg");
+    background-position: 20% center;
 
+    @include media($large) {
+      background-position: center center;
+    }
   }
 
   &.higher-education {
