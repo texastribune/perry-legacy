@@ -93,7 +93,7 @@ module.exports = function (grunt) {
         cwd: '.tmp',
         dest: '<%= config.dist %>',
         src: [
-          '{,*/}*.html',
+          '**/*.html',
         ]
       },
       styles: {
@@ -121,7 +121,7 @@ module.exports = function (grunt) {
         files: [{
           expand: true,
           cwd: '<%= config.dist %>',
-          src: '{,*/}*.html',
+          src: '**/*.html',
           dest: '<%= config.dist %>'
         }]
       }
@@ -237,7 +237,7 @@ module.exports = function (grunt) {
         files: ['Gruntfile.js']
       },
       html: {
-        files: ['<%= config.app %>/{,*/}*.html'],
+        files: ['<%= config.app %>/**/*.html'],
         tasks: ['nunjucks', 'wiredep'],
         options: {
           livereload: true
