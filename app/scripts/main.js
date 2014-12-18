@@ -17,6 +17,7 @@ function setHeight() {
   var navdrawerContainer = querySelector('.navdrawer-container');
   var body = document.body;
   var appbarElement = querySelector('.app-bar');
+  var container = querySelector('.menu-container');
   var menuBtn = querySelector('.menu');
   var main = querySelector('.main');
   var icon = querySelector('.menu-icon');
@@ -25,6 +26,7 @@ function setHeight() {
     body.classList.remove('open');
     appbarElement.classList.remove('open');
     navdrawerContainer.classList.remove('open');
+    container.classList.remove('open');
     icon.classList.remove('x');
   }
 
@@ -32,7 +34,8 @@ function setHeight() {
     body.classList.toggle('open');
     appbarElement.classList.toggle('open');
     navdrawerContainer.classList.toggle('open');
-    navdrawerContainer.classList.add('opened');
+    // navdrawerContainer.classList.add('opened');
+    container.classList.toggle('open');
     icon.classList.toggle('x');
   }
 

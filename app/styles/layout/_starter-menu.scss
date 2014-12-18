@@ -65,6 +65,14 @@ body {
   z-index: 2;
 }
 
+.menu-container {
+  transition: margin-left 1s ease;
+
+  &.open {
+    margin-left: 0;
+  }
+}
+
 .navdrawer-container {
   background-color: $masthead-black;
   display: none;

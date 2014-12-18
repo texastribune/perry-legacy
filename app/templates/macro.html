@@ -7,7 +7,7 @@
     <meta property="og:description" content="{{ sheet.facebook_text }}">
     <meta property="og:title" content="{{ sheet.headline }}">
     <meta property="og:url" content="http://apps.texastribune.org/perry-legacy/{{ sheet.slug }}">
-    <meta property="og:image" content="{{ sheet.facebook_art }}">
+    <meta property="og:image" content="//s3.amazonaws.com/static.texastribune.org/media/{{ sheet.facebook_art }}">
 
   <!-- Twitter settings -->
     <meta name="twitter:card" value="summary_large_image">
@@ -16,9 +16,7 @@
     <meta name="twitter:title" content="{{ sheet.headline }}">
     <meta name="twitter:description" content="{{ sheet.tweet_text }}">
     <meta name="twitter:url" content="http://apps.texastribune.org/perry-legacy/{{ sheet.slug }}">
-    <meta name="twitter:image" content="{{ sheet.facebook_art }}">
-    <meta name="twitter:image:width" content="560">
-    <meta name="twitter:image:height" content="295">
+    <meta name="twitter:image" content="//s3.amazonaws.com/static.texastribune.org/media/{{ sheet.facebook_art }}">
   {% endmacro %}
 
 <!-- Project Header -->
