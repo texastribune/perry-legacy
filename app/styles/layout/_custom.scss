@@ -143,12 +143,14 @@ body {
 }
 
 .masthead .branding {
-  text-align: right;
+  display: inline;
   padding-right: 1em;
+  text-align: left;
 
   .trib-logo {
     &.desktop {
       display: none;
+      margin: .75em .5em;
 
       @include media($banner-bp) {
         display: inline-block;
@@ -158,6 +160,7 @@ body {
     &.mobile {
       display: inline-block;
       height: 2em;
+      margin: .75em .5em;
 
       @include media($banner-bp) {
         display: none;
