@@ -202,8 +202,21 @@ body {
 
   }
 
+  &:after {
+   visibility: hidden;
+   display: block;
+   font-size: 0;
+   content: " ";
+   clear: both;
+   height: 0;
+ }
+
   .byline {
     margin-bottom: 0;
+  }
+
+  &.raw-text {
+    margin-top: 2em;
   }
 }
 

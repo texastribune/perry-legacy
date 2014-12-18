@@ -50,3 +50,35 @@
     </div>
   </header>
   {% endmacro %}
+
+<!-- Generate Raw Text -->
+{% macro rawtext(sheet) %}
+<div class="main">
+  <div class="container">
+    <div class="prose raw-text">
+      <h1>{{ sheet.headline }}</h1>
+      <div class="byline">By {{ sheet.byline }} | Dec. 28, 2014</div>
+      {{ sheet.text_intro }}
+      {{ sheet.text_introb }}
+      {{ sheet.text_1_header }}
+      {{ sheet.text_1 }}
+      {{ sheet.text_1b }}
+      {{ sheet.text_2_header }}
+      {{ sheet.text_2 }}
+      {{ sheet.text_2b }}
+      {{ sheet.text_3_header }}
+      {{ sheet.text_3 }}
+      {{ sheet.text_3b }}
+      {{ sheet.text_4_header }}
+      {{ sheet.text_4 }}
+      {{ sheet.text_4b }}
+      {{ sheet.text_5_header }}
+      {{ sheet.text_5 }}
+      {{ sheet.text_5b }}
+      {{ sheet.text_6 }}
+      {{ sheet.text_6b }}
+    </div>
+  </div>
+</div>
+{% endmacro %}
+

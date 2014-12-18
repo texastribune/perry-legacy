@@ -160,7 +160,7 @@ module.exports = function (grunt) {
         files: [{
           expand: true,
           cwd: '<%= config.app %>',
-          src: ['{,*/}*.html', '!templates/*'],
+          src: ['**/*.html', '!templates/*'],
           dest: '.tmp',
           ext: '.html'
         },{
