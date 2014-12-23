@@ -37,12 +37,12 @@
     <h1>{{ sheet.headline }}</h1>
     <div class="byline">By {{ sheet.byline }} | Dec. 28, 2014</div>
     <div class="row share-row">
-      <a href="https://twitter.com/intent/tweet?text={{ sheet.tweet_text | urlencode }} {{ sheet.share_url | urlencode }}&via=texastribune" title="share on Twitter" class="social-share" target="_blank">
+      <a href="https://twitter.com/intent/tweet?text={{ sheet.tweet_text | urlencode }} {{ sheet.share_url_tw | urlencode }}&via=texastribune" title="share on Twitter" class="social-share" target="_blank">
         <div class="share-cell first-share">
           <i class="fa fa-twitter"></i> Tweet
         </div>
       </a>
-      <a href="https://www.facebook.com/dialog/feed?app_id=154122474650943&display=popup&name={{ sheet.headline | urlencode }}&link=http%3A%2F%2Fapps.texastribune.org%2Fperry-legacy%2F{{ sheet.slug }}%2F&redirect_uri=http%3A%2F%2Fapps.texastribune.org/perry-legacy/{{ sheet.slug }}&description={{ sheet.facebook_text }}&picture=%2F%2Fs3.amazonaws.com%2Fstatic.texastribune.org%2Fmedia%2Fperry-legacy%2Flead-art%2F{{ sheet.facebook_art | urlencode }}" title="share on Facebook" class="social-share" target="_blank">
+      <a href="https://www.facebook.com/dialog/feed?app_id=154122474650943&display=popup&name={{ sheet.headline | urlencode }}&link={{ sheet.share_url_fb | urlencode }}&redirect_uri=http%3A%2F%2Fapps.texastribune.org/perry-legacy/{{ sheet.slug }}&description={{ sheet.facebook_text }}&picture=%2F%2Fs3.amazonaws.com%2Fstatic.texastribune.org%2Fmedia%2Fperry-legacy%2Flead-art%2F{{ sheet.facebook_art | urlencode }}" title="share on Facebook" class="social-share" target="_blank">
         <div class="share-cell">
           <i class="fa fa-facebook"></i> Share
         </div>
